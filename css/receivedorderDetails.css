@@ -1,0 +1,102 @@
+/* 已接单订单详情 */
+#head {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0.88rem;
+	background: #1a91e3;
+}
+#head .back {
+	width: 0.2rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0.24rem;
+	margin-top: -0.15rem;
+}
+#head h2{
+	position: absolute;
+	width:0.41rem;
+	height:0.45rem;
+	top:50%;
+	right:0.3rem;
+	margin-top:-0.25rem;
+} 
+#head h2 img{
+	width:100%;
+}
+#head .title {
+	width: 100%;
+	height: 100%;
+	font-size: 0.34rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+}
+#con {
+	margin-top: 0.88rem;
+	overflow: hidden;
+}
+#con ul {
+	width: 7.26rem;
+	padding-left: 0.24rem;
+	border-bottom: 0.2rem solid #f2f2f2
+}
+#con ul li {
+	width: 100%;
+	height: 0.88rem;
+	border-bottom: 1px solid #dedede;
+	font-size: 0.28rem;
+	color: #333;
+	line-height: 0.88rem;
+	position: relative;
+}
+#con ul li span{
+	width:1.5rem;
+	display: inline-block;
+}
+#con ul li:last-child {border:none;}
+#con ul li input {
+	width: 4.84rem;
+	height: 0.86rem;
+	border: 0;
+	font-size: 0.3rem;
+	color: #666;
+	position: absolute;
+	left: 2rem;
+	margin-top: 0.01rem;
+}
+.btn {
+    margin-top: 1rem;
+}
+.btn .action {
+	display: none;
+	width: 90%;
+	height: 0.88rem;
+	font-size: 0.36rem;
+	text-align: center;
+	line-height: 0.88rem;
+	border-radius: 0.2rem;
+    border: 0;
+    background: #1a92e4;
+    color: #fff;
+    margin-left:5%;
+}
+.beizhu p {
+	font-size:0.3rem;padding:0.18rem 0.24rem;
+}
+.beizhu textarea {
+	width:92%;height:2rem;margin-left:4%;
+	font-size:0.28rem;
+	padding:0.3rem;
+	color: #666;
+	box-sizing: border-box;
+}
+.beizhu textarea::-webkit-input-placeholder {
+	font-size:0.28rem;
+	padding-left:0.1rem;
+}
+.layui-layer-btn{
+	text-align: center;
+}

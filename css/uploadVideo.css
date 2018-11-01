@@ -1,0 +1,13 @@
+/* 上传视频 */
+*{padding:0;margin:0;}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;z-index:9;}
+section{height:100vh;margin-top:0.8rem;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+.container .header .choice{line-height:0.88rem;color:#fff;font-size:0.34rem;padding-left: 0.2rem;}
+.container .header .txl {width: 0.5rem;height: 0.4rem;display: inline-block;padding:0.25rem 0.2rem 0 0;}
+.container .header .txl img {width: 100%;height: 100%;}
+section p input {border:none;border:1px solid #dedede;width:84%;margin-left:5%;display:inline-block;padding:0.2rem;font-size:0.3rem;background:#f2f2f2;}
+button.btn {width:90%;height:0.8rem;line-height:0.76rem;background:#1a91e3;color:#fff;border:none;border-radius:0.2rem;position:absolute;bottom:1.5rem;left:5%;font-size:0.32rem;}

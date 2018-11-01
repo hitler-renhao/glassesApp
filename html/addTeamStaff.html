@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	    <title>添加员工</title>
+	    <link rel="stylesheet" href="/static/app/css/common.css">
+	    <link rel="stylesheet" href="/static/app/css/addstaff.css">
+	    <link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css">
+	    <script src="/static/app/js/common/common.js"></script>
+	</head>
+	<body>
+		<div class="container">
+        <header class="header">
+            <a href="javaScript:;" class="pic" style="margin-top: 0.25rem;
+    margin-left: 0.25rem;" onclick="javascript:;self.location=document.referrer;">
+                <img src="/static/app/images/icon_back2.png" alt="">
+            </a>
+            <span class="choice">添加员工</span>
+            <span></span>
+        </header>
+        <section>
+            <div class="addstaff">
+                <ul>
+                    <li>
+                        <span>姓名：</span>
+                        <input type="text" placeholder="请输入姓名" class="compellation"/>
+                    </li>
+                    <li>
+                        <span>性别：</span>
+                        <input type="text" placeholder="请输入性别" class="sex"/>
+                    </li>
+                    <li>
+                        <span>电话：</span>
+                        <input type="tel" placeholder="请输入电话" class="tel"/>
+                    </li>
+                    <li>
+                        <span>备用电话：</span>
+                        <input type="tel" placeholder="请输入备用电话" class="phone"/>
+                    </li>
+                     <li>
+                        <span>家庭住址：</span>
+                        <input type="text" placeholder="请输入家庭住址" class="address"/>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn">提交</button>
+        </section>
+    </div>
+    <script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+	<script src="/static/app/layui/lay/modules/layer.js"></script>
+	<script src="/static/app/js/common/echarts.min.js"></script>
+	<script src="/static/app/js/common/commonUrl.js"></script>
+	<script src="/static/app/js/alljs/addTeamStaff.js"></script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+/* 关注聊天 */
+*{padding:0;margin:0;}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;z-index:9;}
+section{height:100vh;background:#f2f2f2;margin-top:0.8rem;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+.container .header .choice{line-height:0.88rem;color:#fff;font-size:0.34rem;padding-left: 0.2rem;}
+.container .header .txl {width: 0.4rem;height: 0.4rem;display: inline-block;padding:0.2rem 0.2rem 0 0;}
+.container .header .txl img {width: 100%;height: 100%;}
+ul {padding-top:0.4rem;}
+ul li {display:flex;}
+ul li .chat {width:4rem;height:1.2rem;background:url(../images/chat_bg.png) no-repeat;background-size:100% 100%;display:inline-block;position: relative;margin-left:0.1rem;}
+ul li .chat span {position: absolute;left:0;top:0;padding: 0.2rem;padding-left:0.3rem;}
+ul .li {display:flex;justify-content: flex-end;margin-top:0.3rem;}
+ul li .chats {width:4rem;height:1.2rem;background:url(../images/chat_bluebg.png) no-repeat;background-size:100% 100%;display:inline-block;position: relative;margin-right:0.1rem;}
+ul li .chats span {position: absolute;left:0;top:0;padding: 0.2rem 0.1rem;color:#fff;}
+.footer {background:#fff;height:0.88rem;width:100%;border-top:1px solid #f2f2f2;position:fixed;bottom:0;left:0;}
+.footer span {width:0.48rem;height:0.48rem;display:inline-block;}
+.footer span img {width: 100%;height: 100%;}
+.footer input {border:none;border-bottom:1px solid #f2f2f2;width:66%;height:0.6rem;display:inline-block;}
+.success p {width:2.4rem;height:0.78rem;line-height:0.78rem;text-align:center;background:rgba(0, 0, 0, 0.45);border-radius:0.1rem;color:#fff;position:absolute;top:50%;left:50%;margin-left:-1.2rem;margin-top:-0.39rem;}

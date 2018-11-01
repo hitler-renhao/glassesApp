@@ -1,0 +1,18 @@
+/* 消息列表 */
+*{padding:0;margin:0;}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;z-index:9;}
+section{flex:1;background:#fff;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+.container .header .choice{line-height:0.88rem;color:#fff;font-size:0.32rem;padding-left: 0.2rem;}
+.container .header .txl {width: 0.45rem;height: 0.45rem;display: inline-block;padding:0.2rem 0.2rem 0 0;}
+.container .header .txl img {width: 100%;height: 100%;}
+.message_list {margin-top: 0.9rem;}
+.message_list dl {display:flex;border-bottom:1px solid #f2f2f2;}
+.message_list dl:last-child {border:none;}
+.message_list dl dt {width:1.1rem;height:1.1rem;padding:0.2rem;position:relative;}
+.message_list dl dt img{width: 100%;height: 100%;}
+.message_list dl dt span {width:0.3rem;height:0.3rem;line-height:0.3rem;text-align:center;color:#fff;border-radius:50%;background:red;display:inline-block;position:absolute;right:0.1rem;top:0.12rem;font-size:0.24rem;}
+.message_list dl dd {padding-top:0.25rem;width:74%;}

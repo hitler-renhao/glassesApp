@@ -1,0 +1,18 @@
+/* 消息列表2 */
+*{padding:0;margin:0;}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;z-index:9;}
+section{flex:1;background:#fff;margin-top:0.9rem;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+.container .header .choice{line-height:0.88rem;color:#fff;font-size:0.32rem;padding-left: 0.2rem;}
+.list a {display:flex;justify-content: space-between;position:relative;border-bottom:1px solid #f2f2f2;}
+.list a li {display:flex;}
+.list a li .picImg {width:1rem;height:1rem;display:inline-block;margin:0.2rem 0.3rem;position:relative;}
+.list a li .picImg img {width: 100%;height: 100%;}
+.list a li .picImg .tip {width:0.4rem;height:0.25rem;line-height:0.25rem;border-radius:0.15rem;text-align:center;background:#ee3a29;color:#fff;position:absolute;top:-0.08rem;right:-0.2rem;font-size:0.24rem;}
+.list a li p {padding-top: 0.5rem;font-size: 0.33rem;color:#666;}
+.list a .jiantou {width:0.2rem;height:0.35rem;display:inline-block;position:absolute;right:0.3rem;top:0.6rem;}
+.list a .jiantou img {width: 100%;height: 100%;}
+section ul:first-child{border-bottom:0.2rem solid #f2f2f2;}

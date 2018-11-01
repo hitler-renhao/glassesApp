@@ -1,0 +1,41 @@
+.addstaff ul{
+	box-sizing: border-box;
+	width:100%;
+	padding:0 0.3rem;
+}
+.addstaff ul li{
+	width: 100%;
+    display: inline-block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+    border-bottom: 1px solid #ddd;
+    color: #8a8a8a;
+    display: flex;
+}
+.addstaff ul li span{
+	display: inline-block;
+	width:1.5rem;
+	text-align: left;
+	color: #8a8a8a;
+}
+.addstaff ul li input{
+	border:none;
+	flex: 1;
+	color: #8a8a8a;
+}
+ .btn{
+	display: block;
+	width:90%;
+	border:none;
+	background: #198fe0;
+	font-size: 0.36rem;
+	height:0.88rem;
+	line-height: 0.88rem;
+	text-align: center;
+	border-radius: 0.2rem;
+	color: #FFF;
+	margin-top:0.4rem;
+	margin-top:30%;
+	margin-left:5%;
+}

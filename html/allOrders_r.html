@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>全部订单</title>
+  <link rel="stylesheet" href="/static/app/css/common.css">
+  <link rel="stylesheet" href="/static/app/css/allOrders.css">
+</head>
+<body>
+    <div class="container">
+     <header class="header" style="position: fixed;z-index: 10;">
+      <a href="javascript:;" class="pic" >
+       <img src="/static/app/images/icon_back2.png" alt="">
+      </a>
+      <p class="choice" style="width: 100%; text-align: center;">全部订单</p>
+     </header>
+     <!-- 带渲染页面 -->
+     <div class="main" id="ordersList" style="margin-top:0.88rem;">
+        
+      </div>
+    <!-- 模板引擎 -->
+  </div>
+       <!--body-->
+      <script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+      <script src="/static/app/js/common/common.js"></script> 
+      <script src="/static/app/js/common/commonUrl.js"></script>
+      <script src="/static/app/js/common/template.js"></script>
+
+      <!-- 模板 -->
+     <script type="text/html" id="ordersTpl">
+        <% for(var i = 0; i < data.list.length; i++) { %>
+        <ul>
+          <li>
+            <div class="box">
+              <img src="<%:=data.list[i].userHead%>" alt="">
+              <div class="infomation">
+                <div class="info">
+                  <span><%:=data.list[i].username%></span>
+                  <span><%:=data.list[i].phone%></span>
+
+                  <% if(data.list[i].bespeakstatus == 0) { %>
+                    <span class="state">未开始</span>
+                  <% } else if(data.list[i].bespeakstatus == 1) { %>
+                    <span class="state">接单</span>
+                  <% } else if(data.list[i].bespeakstatus == 2) { %>
+                    <span class="state">待确认</span>
+                  <% } else if(data.list[i].bespeakstatus == 3) { %>
+                    <span class="state">已确认</span>
+                  <% } else if(data.list[i].bespeakstatus == 4) { %>
+                    <span class="state">售后</span>
+                  <% } else if(data.list[i].bespeakstatus == 5) { %>
+                    <span class="state">拒绝</span>
+                  <% } %>
+
+                </div>
+                <div class="date">
+                	<% 
+                		var times = data.list[i].createtime.split('T');
+           					var dateT = times[1].split('.000+0000')[0]; // 11:30:27
+            				var dateTT = times[0];   // 2018-08-22 
+            			%>
+                  <span><%:=dateTT%><span>&nbsp;&nbsp;</span><%:=dateT%></span>
+                </div>
+                <p class="address"><!--地址-->&nbsp;&nbsp;</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <% } %>
+      </script>
+      
+      <script>
+        var ordersTpl = document.getElementById('ordersTpl').innerHTML;
+        var ordersList = $('#ordersList');
+        var optistId=getUrlParam('id');
+        const allOrdersUrl = global + '/v1.0/merchant/merchantOrderList';
+
+        function orders(Tpl, url, list, shopId, pageNum, pageSize) {
+          $.ajax({
+          url: url,
+          type: 'get',
+          dateType: 'json',
+          data: {
+            shopId: shopId,
+            pageNum: pageNum,
+            pageSize: pageSize
+          },
+          success: function(msg) {
+            console.log(msg.data);
+            
+            if(msg.code == 200) {
+            var html = template(Tpl, msg);
+            list.html(html);
+            }
+          }
+          })
+        };
+        
+        orders(ordersTpl, allOrdersUrl, ordersList, optistId, 1, 10);
+        
+        $('.pic').click(function() {
+  		window.history.go(-1);
+  	})
+      </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+#head {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0.88rem;
+	background: #1a91e3;
+	z-index: 99;
+}
+#head .back {
+	width: 0.2rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0.24rem;
+	margin-top: -0.15rem;
+}
+#head .title {
+	width: 100%;
+	height: 100%;
+	font-size: 0.32rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+}
+.main{
+	margin-top:0.88rem;
+	width: 100%;
+	box-sizing: border-box;
+	padding:0 0.5rem;
+	color:#333;
+}
+.main h2{
+	width:100%;
+	padding-top:0.3rem;
+	text-align: center;
+	font-size: 0.3rem;
+	box-sizing: border-box;
+}
+.main h2 img{
+	width:1rem;
+	height:1rem;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right:0.3rem;
+}
+.main h3{
+	text-align: center;
+	font-size: 0.34rem;
+	margin-top:0.3rem;
+	font-weight: 600;
+}
+.main h4{
+	text-align: center;
+	font-size: 0.28rem;
+	margin-top:0.3rem;
+}
+.main ul{
+	margin-top:0.3rem;
+	margin-bottom:0.3rem;
+}
+.main ul li{
+	height:0.6rem;
+	line-height: 0.6rem;
+}
+.main ul li span:first-child{
+	width:1.8rem;
+	text-align: left;
+	display: inline-block;
+}
+.main h5{
+	width:100%;
+	text-align: right;
+	height:0.8rem;
+	line-height: 0.8rem;
+}
+.main .subtotal{
+	border-bottom:1px solid #ccc;
+}
+.title{
+	width:100%;
+	height:0.6rem;
+	line-height: 0.6rem;
+	border-top:1px solid #ccc;
+}
+.title h6{
+	font-size: 0.28rem;
+	width:50%;
+	display: inline-block;
+}
+.title span{
+	display: inline-block;
+	width:50%;
+	text-align: right;
+}
+.title span .user-arrow{
+	width:0.3rem;
+	height:0.2rem;
+}
+.listDetail{
+	height:3.6rem;
+	overflow: hidden;
+}
+.listDetail ol li p{
+	height:0.6rem;
+	line-height: 0.6rem;
+}
+.listDetail ol li p i{
+	display: inline-block;
+	width:25%;
+}
+.listDetail ol li p span{
+	display: inline-block;
+	width:30%;
+	text-align: left;
+}
+.rotate{
+
+    transform-origin:center center; 
+
+    transform: rotate(180deg);
+
+    -webkit-transform: rotate(180deg);
+
+    -moz-transform: rotate(180deg);
+
+    -ms-transform: rotate(180deg);
+
+    -o-transform: rotate(180deg);
+
+    transition: transform 0.2s; 
+
+    -moz-transition: -moz-transform 0.2s; 
+
+    -moz-transition: -moz-transform 0.2s; 
+
+    -o-transition: -o-transform 0.2s; 
+
+    -ms-transition: -ms-transform 0.2s; 
+
+}
+
+.rotate1{
+
+    transform-origin:center center;
+
+    transform: rotate(0deg);
+
+    -webkit-transform: rotate(0deg);
+
+    -moz-transform: rotate(deg);
+
+    -ms-transform: rotate(0deg);
+
+    -o-transform: rotate(0deg);
+
+    transition: transform 0.2s; 
+
+    -moz-transition: -moz-transform 0.2s; 
+
+    -moz-transition: -moz-transform 0.2s; 
+
+    -o-transition: -o-transform 0.2s; 
+
+    -ms-transition: -ms-transform 0.2s; 
+
+}

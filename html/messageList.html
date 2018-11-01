@@ -1,0 +1,70 @@
+<!-- 消息列表 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>消息列表</title>
+    <link rel="stylesheet" href="/static/app/css/common.css">
+    <link rel="stylesheet" href="/static/app/css/messageList.css">
+    <script src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="pic"><img src="/static/app/images/icon_back2.png" alt=""></span>
+            <span class="choice">消息列表</span>
+            <span class="txl"><img src="/static/app/images/txl_icon.png" alt=""></span>  <!-- 点击进入通讯录 -->
+        </header>
+        <section>
+            <div class="message_list">
+                <dl class="detail">
+                    <dt>
+                        <img src="/static/app/images/head03.png" alt="">
+                        <span>99</span>
+                    </dt>
+                    <dd>
+                        <p style="display:flex;justify-content: space-between;">
+                            <span style="font-size: 0.32rem;">卜文鹏</span>
+                            <time style="color:#999;">09:36</time>
+                        </p>
+                        <p style="font-size: 0.32rem;padding-top:0.1rem;color:#999;">
+                            <span>[3条]</span>
+                            <span>今天预报有雨，出门注意安全</span>
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="detail">
+                    <dt>
+                        <img src="/static/app/images/head03.png" alt="">
+                        <span>2</span>
+                    </dt>
+                    <dd>
+                        <p style="display:flex;justify-content: space-between;">
+                            <span style="font-size: 0.32rem;">卜文鹏</span>
+                            <time style="color:#999;">09:36</time>
+                        </p>
+                        <p style="font-size: 0.32rem;padding-top:0.1rem;color:#999;">
+                            <span>[3条]</span>
+                            <span>今天预报有雨，出门注意安全</span>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script>
+	$(".pic").click(function(){
+		window.location.href = '/static/app/html/index.html'
+    })
+    $(".txl").click(function(){
+		window.location.href = '/static/app/html/mailList.html'
+    })
+    $(".detail").click(function(){
+        window.location.href = '/static/app/html/focusChat.html'
+    })
+</script>
+</html>

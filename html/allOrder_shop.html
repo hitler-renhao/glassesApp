@@ -1,0 +1,64 @@
+<!-- 预约订单 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>全部订单</title>
+    <link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+    <link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css" />
+	<link rel="stylesheet" type="text/css" href="/static/app/css/allOrder.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <!-- 遮罩层S -->
+    <div class="mask" style="display:none;">
+        <div class="dialog">
+            <h2>您确定要删除此订单吗？</h2>
+            <p style="padding:0.2rem 0 0.5rem 0;text-align: center;">删除订单后该订单将无法恢复</p>
+            <p style="border-top:1px solid #f2f2f2;">
+                <span style="border-right:1px solid #f2f2f2;" class="no">否</span>
+                <span class="yes">是</span>
+            </p>
+        </div>
+    </div>
+    <!-- 遮罩层E -->
+    <div class="container">
+        <header class="header">
+            <a href="javascript:;" class="pic">
+                <img src="/static/app/images/icon_back2.png" alt="">
+            </a>
+            <span class="order">全部订单</span>
+            <span></span>
+        </header>
+        <div class="tab_con" id="wrapper">
+            <div class="all_list">
+            </div>
+            <div class="pull-loading"></div>
+        </div>
+        
+       <!-- <section class="section">
+            <div class="tab" id="tabs">
+                <ul class="uls" style="display: none;">
+                    <li id="all_orders" class="bg">全部订单</li>
+                    <li id="delete_orders">取消订单</li>
+                </ul>
+                <div class="tab_con" id="tab_con" style="padding-top:0">
+                    <div class="all_list" style="display:block;">
+                    	
+                    </div>
+                    <div class="all_list">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>-->
+    </div>
+</body>
+<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/static/app/layui/lay/modules/layer.js" ></script>
+<script src="/static/app/js/common/iscroll.js"></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script src="/static/app/js/alljs/allOrder_shop.js"></script>
+</html>

@@ -1,0 +1,32 @@
+/* 视力详情 */
+*{padding:0;margin:0;}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;z-index:9;}
+section{height:100vh;background:#f2f2f2;margin-top:0.8rem;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+.container .header .choice{line-height:0.88rem;color:#fff;font-size:0.34rem;}
+.con {margin-top: 0.88rem;overflow: hidden;}
+.con .list {width: 7.26rem;padding-left: 0.24rem;border-bottom: 0.2rem solid #f2f2f2}
+.con .list li {width: 100%;height: 0.88rem;border-bottom: 1px solid #dedede;font-size: 0.28rem;color: #333;line-height: 0.88rem;position: relative;}
+.con .list li span{
+	width:1.5rem;display: inline-block;
+}
+.con .list li:last-child {border:none;}
+.con .list li input {width: 4.84rem;height: 0.86rem;border: 0;font-size: 0.3rem;color: #666;position: absolute;left: 2.18rem;margin-top: 0.01rem;}
+.lists {width:92%;margin-left:4%;border:1px solid #ccc;}
+.lists ul {display:flex;}
+.lists ul li {border:1px solid #dedede;width:1.8rem;text-align:center;font-size:0.24rem;padding:0.2rem 0;}
+.beizhu textarea::-webkit-input-placeholder {
+	font-size:0.3rem;
+	padding-left:0.1rem;
+}
+.remark{
+	width:92%;
+	height:2rem;
+	margin-left:4%;
+	padding:0.2rem;
+	box-sizing:border-box;
+	font-size: 0.3rem;
+}

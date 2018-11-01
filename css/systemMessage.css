@@ -1,0 +1,14 @@
+/* 系统消息 */
+*{padding:0;margin:0;}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;z-index:9;}
+section{height:100vh;margin-top:0.8rem;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+.container .header .choice{line-height:0.88rem;color:#fff;font-size:0.34rem;}
+section .list ul {position:relative;padding-top:0.2rem;border-bottom:0.2rem solid #f2f2f2;}
+section .list ul li:first-child {padding:0.1rem 0.3rem;font-size: 0.3rem;}
+section .list ul li:nth-child(2) {width:75%;padding:0.05rem 0.3rem 0.2rem 0.3rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;color:#666;}
+section .list ul span {position:absolute;top:0.5rem;right:0.3rem;width:0.2rem;height:0.3rem;display:inline-block;}
+section .list ul span img {width: 100%;height: 100%;}

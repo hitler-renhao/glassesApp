@@ -1,0 +1,235 @@
+body,html{background:#f2f2f2;}
+.container {
+    background:#f2f2f2;
+}
+/* 遮罩S */
+.mask {
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    position:fixed;
+    top:0;left:0;
+    z-index:9;
+}
+.mask .dialog {
+    width:80%;
+    background:#fff;
+    border-radius: 0.2rem;
+    position:absolute;
+    top:50%;left:50%;
+    margin:-28% 0 0 -40%;
+}
+.mask .dialog h3 {
+    padding-top:0.4rem;
+    padding-bottom:0.3rem;
+    text-align:center;
+    font-size: 0.34rem;
+}
+.mask .dialog p {
+    padding-top:0.1rem;
+    padding-bottom:0.4rem;
+    text-align:center;
+    font-size: 0.24rem;
+}
+.mask .dialog .message {
+    border-bottom-left-radius:0.2rem;
+    border-bottom-right-radius:0.2rem;
+    padding:0.3rem;
+    text-align:center;
+    background:#1a91e3;
+    color:#fff;
+    font-size: 0.34rem;
+}
+/* 遮罩E */
+
+.mess_top {
+    background:url(/static/app/images/wsgrxx.png) no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    height:4.1rem;
+    position:relative;
+}
+.mess_top .touxiang {
+    width:1.6rem;
+    height:1.6rem;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-0.8rem;
+    margin-top:-0.8rem;
+}
+.container .main .mess_top .pic {
+    width:0.3rem;
+    height:0.3rem;
+    background:#666;
+    color:#fff;
+    border-radius: 50%;
+    display:inline-block;
+    position: absolute;
+    top:0.2rem;
+    left:0.2rem;
+    padding:0.1rem;
+}
+.container .main .mess_top .pic img{
+    /* width: 100%;
+    height: 100%; */
+    width:0.2rem;
+    height:0.3rem;
+    vertical-align: baseline;
+}
+.touxiang img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.touxiang .zheng {
+    width:0.35rem;
+    height:0.35rem;
+    line-height:0.35rem;
+    text-align:center;
+    border-radius:50%;
+    background:#f5c406;
+    color:#fff;
+    display:block;
+    position:absolute;
+    right:0.15rem;
+    bottom:0;
+    font-size:0.24rem;
+}
+.touxiang .name {
+    position: absolute;
+    right: 0rem;
+    bottom: -0.5rem;
+    color: #fff;
+    font-size: 0.32rem;
+    width: 100%;
+    text-align: center;
+}
+.kong {
+    width:100%;
+    height:1.5rem;
+    background:#f2f2f2;
+}
+.top {
+    width:90%;
+    height:1.4rem;
+    background:#fff;
+    border-radius:0.2rem;
+    position:absolute;
+    top:3.8rem;
+    left:5%;
+}
+.top ul {
+    display:flex;
+    padding-top:0.3rem;
+}
+.top ul li{
+    flex:1;
+}
+.top ul li:nth-child(1){
+    border-right:1px solid #ccc;
+}
+.top ul li p{
+    text-align:center;
+}
+.uls {
+    background:#fff;
+}
+.uls li {
+    border-bottom:1px solid #f2f2f2;
+    padding:0.2rem 0.5rem;
+    display:flex;
+    justify-content: space-between;
+}
+.uls:nth-child(1) .address_li {
+    position:relative;
+}
+.uls:nth-child(1) .address_li .span {
+    padding-right:0.1rem;
+}
+.uls:nth-child(2) {
+    border-bottom:0.2rem solid #f2f2f2;
+    border-top:0.2rem solid #f2f2f2;
+}
+.uls li span{
+    color:#333;
+}
+.uls li .span {
+    text-align:right;
+    color:#666;
+    border:none;
+    width:65%;
+}
+#charge,.spans{
+	text-align:right;
+    color:#666;
+    border:none;
+}
+.uls li .question {
+    width: 88%;
+    display:block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#666;
+}
+.uls li .jiantou {
+    position:absolute;
+    right:0.24rem;
+    top:0.23rem;
+}
+.uls li .jiantou img {
+    width:8px;
+    height:14px;
+}
+.uls .shanchang, .jianjie {
+    position:relative;
+}
+.btn button {
+    width:90%;
+    height:0.8rem;
+    background:#1f9ef5;
+    color:#fff;
+    border:none;
+    border-radius: 0.2rem;
+    margin-left:5%;
+    margin-top:0.4rem;
+    margin-bottom:0.5rem;
+}
+.num{
+	display: none;
+	border:none;
+	border:1px solid #ddd;
+	width:0.8rem;
+}
+.uls li label input[type='radio']{
+	margin-top:-0.02rem;
+	margin:0 0.2rem;
+	vertical-align: middle;
+}
+.uls li i{
+	margin-top:0.06rem;
+}
+.scbox textarea,.jjbox textarea{
+	width:100%;
+	padding:0.1rem;
+	box-sizing: border-box;
+	color: #666;
+	border:1px solid #ddd;
+	font-size: 0.24rem;
+	height:3rem;
+}
+.btnsc,.btnjj{
+	width: 20%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    background: #1a91e3;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.26rem;
+}

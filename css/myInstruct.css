@@ -1,0 +1,12 @@
+/* 我的简介 */
+*{padding:0;margin:0;}
+.container {display:flex;flex-direction: column;}
+section{flex:1;background:#fff;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .choice{line-height:0.88rem;color:#fff;font-size:0.32rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+button.btn {width:80%;height:0.76rem;line-height:0.76rem;background:#1a91e3;color:#fff;border:none;border-radius:0.2rem;position:absolute;bottom:4.5rem;left:10%;font-size:0.32rem;}
+#comment textarea{width:90%;height:5rem;margin-left:5%;margin-top:0.2rem;background:#f8f8f8;border:none;border:1px solid #dedede;}
+#comment p {padding-left:0.4rem;}
+#comment p span{color:red;}

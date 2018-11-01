@@ -1,0 +1,41 @@
+<!-- 修改密码新版 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>更换手机号</title>
+    <link rel="stylesheet" href="/static/app/css/common.css">
+    <link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css" />
+    <link rel="stylesheet" href="/static/app/css/changePassword.css">
+    <script src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="pic"><img src="/static/app/images/icon_back2.png" alt=""></span>
+            <span class="choice">更换手机号</span>
+            <span></span>
+        </header>
+        <section>
+        	<div class="center">
+        		<img src="/static/app/images/39.png" />
+        	</div>
+        	<h4>当前绑定的手机号：<span class="bindPhone"></span></h4>
+            <ul>
+                <li><input type="text" placeholder="新手机号" class="tel"></li>
+                <li class="yzm">
+                    <input type="text" placeholder="验证码" class="code">
+                    <button  id="btn" type="button">获取验证码</button>
+                </li>
+            </ul>
+            <p id="preserveBtn">更换手机号</p>
+        </section>
+    </div>
+</body>
+<script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/static/app/layui/lay/modules/layer.js" ></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script src="/static/app/js/alljs/changePhone.js"></script>
+</html>

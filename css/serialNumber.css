@@ -1,0 +1,80 @@
+*{padding:0;margin:0;}
+.container{
+	position: relative;
+}
+
+#head {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0.88rem;
+	background: #1a91e3;
+	text-align: center;
+}
+#head .back {
+	width: 0.2rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0.24rem;
+	margin-top: -0.15rem;
+}
+#head .title {
+	display: inline-block;
+	font-size: 0.36rem;
+	color: #fff;
+	line-height: 0.88rem;
+}
+#head h2{
+	display: inline-block;
+	float: right;
+	color: #fff;
+	font-size: 0.3rem;
+	line-height: 0.88rem;
+	margin-right:0.2rem;
+}
+#con{
+	padding:0.2rem;
+	position: absolute;
+	top:0.88rem;
+	bottom:1.3rem;
+	width:100%;
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+#con ul{
+	width:100%;
+	
+}
+.imgs{
+	width:100%;
+}
+.imgs img{
+	width:100%;
+}
+#con ul li{
+	height:0.88rem;
+	line-height: 0.88rem;
+	font-size: 0.3rem;
+	border-bottom: 1px solid #ddd;
+	padding:0 0.3rem;
+}
+.btn{
+	border:none;
+	display: inline-block;
+	width:90%;
+	height:0.88rem;
+	background: url(/static/app/images/bg06.png) no-repeat;
+	background-size: 100% 100%;
+	font-size: 0.36rem;
+	color: #FFFFFF;
+	margin-left:5%;
+}
+.bom{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:1.3rem;
+	background: #FFFFFF;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>添加银行卡</title>
+	<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css" />
+	<link rel="stylesheet" type="text/css" href="/static/app/css/swiper-4.2.2.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/addBankCard.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="head">
+			<a href="/static/app/html/unboundCard.html"><img class="back" src="/static/app/images/icon_back2.png"></a>
+			<p class="title">添加银行卡</p>
+		</div>
+		<div id="con">
+			<p class="tips">请绑定持卡人本人的银行卡</p>
+			<div class="infor">
+				<div class="name">
+					<label>持卡人</label>
+					<input type="text" name="name" class="cardowner"/>
+				</div>
+				<div class="cardNum">
+					<label>卡号</label>
+					<input type="text" name="cardNum" class="bankcardnumber"/>
+				</div>
+				<div class="cardNum">
+					<label>银行名称</label>
+					<input type="text" name="bandNum" class="bankname" readonly="true"/>
+				</div>
+				<div class="phoneNum">
+					<label>手机号</label>
+					<input type="text" name="cardNum" class="phonenumber"/>
+					<!--<button type="button" class="getcode">获取验证码</button>-->
+				</div>
+				<!--<div class="code">
+					<label>输入验证码</label>
+					<input type="text" name="cardNum" class='codes'/>
+				</div>-->
+			</div>
+			<button class="sureBtn">确定</button>
+		</div>
+	</div>
+</body>
+<script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/static/app/layui/lay/modules/layer.js" ></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script src="/static/app/js/alljs/addBankCard.js"></script>
+</html>

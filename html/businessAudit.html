@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>商家审核</title>
+	<link rel="stylesheet" href="/static/app/layui/css/layui.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/businessAudit.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="head">
+			<a href="javascript:;"><img class="back" src="/static/app/images/icon_back2.png"></a>
+			<p class="title">商家审核</p>
+		</div>
+		<form id="con" class="layui-form" action="" ENCTYPE="multipart/form-data" lay-filter="formTest">
+			<div class="photo">
+				<h3>身份证照片</h3>
+				<h2>1.请使用本人身份证及证件,注意证件原件无覆膜、水渍、反光等。</h2>
+				<h2>2.需上传本人手持身份证件照。</h2>
+				<h2>3.提交的资料仅用于 实名认证，请放心上传。</h2>
+				<div class="layui-upload upload" >
+				  	<img src="/static/app/images/phone03.png" class="layui-upload-img photoImg" id="cardz">
+				</div> 
+				<div class="layui-upload upload" >
+				  	<img src="/static/app/images/photo04.png" class="layui-upload-img photoImg" id='cardf'>
+				</div> 
+				<input type='hidden' class="cardz"/>
+				<input type='hidden' class="cardf"/>
+			</div>
+			<div class="photo">
+				<h3>营业执照/门店照</h3>
+				<div class="layui-upload upload">
+				  	<img src="/static/app/images/phone01.png" class="layui-upload-img photoImg" id='trading'>
+				</div> 
+				<div class="layui-upload upload">
+				  	<img src="/static/app/images/phone02.png" class="layui-upload-img photoImg" id="stores">
+				</div> 
+				<input type='hidden' class="trading"/>
+				<input type='hidden' class="stores"/>
+			</div>
+			<input type="button" name="btn" value="提交审核" class="btn"/>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+	<script src="/static/app/layui/layui.js" charset="utf-8"></script>
+	<script src="/static/app/js/common/commonUrl.js"></script>
+	<script src="/static/app/js/alljs/businessAudit.js"></script>
+</body>
+</html>

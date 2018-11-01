@@ -1,0 +1,117 @@
+<!-- 添加地址 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1">
+ <title>绑定序列号</title>
+ <link rel="stylesheet" href="/static/app/css/common.css">
+ <link rel="stylesheet" href="/static/app/css/productList.css">
+ 
+</head>
+<body>
+    <div class="container">
+     <header class="header">
+      <a href="javascript:;" class="pic">
+       <img src="/static/app/images/icon_back2.png" alt="">
+      </a>
+      <p class="choice">商品列表</p>
+      <a href="javascript:;" class="right">
+       <p>线下销售</p>
+      </a>
+     </header>
+     <!--body-->
+     <div class="boder">
+      <div class="box">
+      </div>
+      <div class="content">
+       <ul class="artic">
+        <li class="active" data-type="0">镜框</li>
+        <li data-type="1">太阳镜</li>
+        <li data-type="2">镜片</li>
+       </ul>
+     </div>
+     <div class="goods">
+      <p class="title">如果线下销售商品，请手动录入销售商品数据</p>
+      <ul id="glassesList">
+       
+      </ul>
+     </div>
+    </div>
+    <script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+    <script src="/static/app/js/common/common.js"></script> 
+    <script src="/static/app/js/common/commonUrl.js"></script>
+    <script src="/static/app/js/common/template.js"></script>
+
+    <!-- 模板引擎 -->
+    <script id="glassesTpl" type="text/html">
+     <% for(var i = 0; i < data.data.length;i++) { %>
+     <li>
+       <img src="/static/app/images/6.png" alt="" class="fl">
+       <div class="fl text">
+         <p class="glassesName"><%:=data.data[i].brandname%></p>
+         <p class="inventory">库存：<%:=data.data[i].productnum%></p>
+       </div>
+      <!-- <a href="javascript:;">
+        <span class="addGlasses fr">+</span>
+       </a>-->
+      </li>
+      <% } %>
+    </script>
+
+    <script>
+    	
+    	// 跳转
+    	var shopIds = getUrlParam('id');
+    	$('.right').click(function() {
+    		location.href = "/static/app/html/salesForm_r.html?id=" + shopIds;
+    	})
+    	
+     var glassesTpl = document.getElementById('glassesTpl').innerHTML;
+     var glassesList = $('#glassesList');
+     
+     // 拼接URL地址
+     const distanceMerchant = global + '/v1.0/CrmShopProductController/searchShopProduct';
+
+     // 左侧tab栏切换
+     $('.artic li').click(function(event) {
+      $(this).addClass('active').siblings().removeClass('active');
+     });
+
+     // 获取data-type 调用ajax函数
+     $('.content .artic li').click(function() {
+      data_type = $(this).attr('data-type');
+      merchant(glassesTpl, glassesList, shopIds, data_type);
+     });
+
+     // post方式发送请求
+     function merchant(Tpl, list, shopId, catalogname) {
+      $.ajax({
+        url: distanceMerchant,
+        type: 'post',
+        dateType: 'json',
+        data: {
+         shopid: shopId, 
+         catalogname: catalogname
+        },
+        success: function(msg) {  
+         console.log(msg.data);
+         if(msg.code == 200) {
+          var html = template(Tpl, msg);
+          list.html(html);
+         }
+        }
+       })
+     };
+
+     // 打开页面默认显示第一栏数据
+     merchant(glassesTpl, glassesList, shopIds, 0);
+     
+     $('.pic').click(function() {
+  		window.history.go(-1);
+  	})
+    </script>
+</body>
+</html>

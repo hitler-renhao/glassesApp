@@ -1,0 +1,81 @@
+<!-- 发布消息 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发布消息</title>
+     <link rel="stylesheet" href="/static/app/layui/css/layui.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/sendMessage.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <!-- 遮罩S -->
+    <div class="mask" style='display:none;'>
+        <div class="dialog">
+            <p style="padding-top:0.5rem;">内容已提交审核</p>
+            <p style="padding-bottom:0.6rem;">请注意查看系统消息！</p>
+        </div>
+    </div>
+    <!-- 遮罩E -->
+    <div class="container">
+        <header class="header">
+            <span class="pic">
+                <img src="/static/app/images/icon_back2.png" alt="">
+            </span>
+            <span class="choice">发布消息</span>
+            <span class="load">上传视频</span>
+        </header>
+        <section>
+        	<form class="layui-form" action="" ENCTYPE="multipart/form-data">
+        	<div id="comment">
+                <div class="box">
+                    <textarea placeholder="输入你想要分享的内容" name="content"></textarea>
+                    <p style="position:absolute;bottom:0.1rem;right:0.5rem;"><span>0</span>/<span>500</span></p>
+                </div>
+            </div>
+            <input type="hidden" lay-verify=""  class="layui-input" name="optUserId" id="optUserId">
+        	<div class="layui-upload">
+        		<ul class="choiceImgs">
+			  		<li id="upload"><img src="/static/app/images/scphone.png" alt=""></li>
+			  	</ul>
+			</div>	
+            <button class="btn" lay-submit="" lay-filter="btn"  data-type="content">保存</button>
+           </form>
+        </section>
+    </div>
+</body>
+<script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script src="/static/app/layui/layui.js" charset="utf-8"></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script type="text/javascript" src="/static/app/js/alljs/sendXiaoxi.js" ></script>
+<script>
+    $(function(){
+        $('#comment textarea').keyup(function(){ 
+            //输入字符后键盘up时触发事件
+            var txtLeng = $(' #comment textarea ').val().length; //把输入字符的长度赋给txtLeng
+            //拿输入的值做判断
+            if( txtLeng>500 ){  
+                //输入长度大于50时span显示0
+                $(' #comment p span ').text(' 0 '); 
+                //截取输入内容的前50个字符，赋给fontsize
+                var fontsize = $('#comment textarea').val().substring(0,500);
+                //显示到textarea上
+                $(' #comment textarea ').val( fontsize );
+            }else{
+                //输入长度小于50时span显示50减去长度
+                $('#comment p span').text(500-txtLeng);  
+            }
+        });
+        $(".load").click(function(){
+            window.location.href = '/static/app/html/uploadVideo.html'
+        })
+        $(".pic").click(function(){
+            window.history.go(-1);
+        })
+        
+   });
+</script>
+</html>

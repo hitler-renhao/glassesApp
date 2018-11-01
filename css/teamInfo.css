@@ -1,0 +1,283 @@
+.audit {
+	width: 100%;
+	height: 3.8rem;
+	position: relative;
+	background: url(/static/app/images/back1.jpg)0 0 no-repeat;
+	background-size: cover;
+}
+
+.audit a {
+	display: inline-block;
+	position: absolute;
+	top: 0.24rem;
+	left: 0.24rem;
+	width: 0.24rem;
+	height: 0.4rem;
+}
+
+.audit a img {
+	width: 100%;
+	height: 100%;
+}
+
+.info {
+	padding: 0 0.24rem;
+	height: auto;
+	margin-top: 0.6rem;
+}
+
+.info p {
+	display: block;
+}
+
+.successed {
+	color: #333;
+	font-size: 0.32rem;
+	line-height: 0.6rem;
+	text-align: center;
+}
+
+.sinfo {
+	color: #666;
+	font-size: 0.28rem;
+	text-align: left;
+	padding: 0 0.1rem;
+	margin-top: 0.2rem;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	height: 0.88rem;
+	border: 1px solid #dedede;
+	margin-top: 0.8rem;
+	font-size: 0.36rem;
+	height: 0.88rem;
+	text-align: center;
+	line-height: 0.88rem;
+	border-radius: 0.2rem;
+	color: #333;
+}
+
+.user {
+	display: block;
+	margin: 0 auto;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-top: 2.1rem;
+	position: relative;
+}
+
+.user img {
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+
+.audit p {
+	color: #333;
+	font-size: 0.36rem;
+	text-align: center;
+}
+
+.info {
+	padding: 0 0.24rem;
+}
+
+.list,
+.infoList {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.list li {
+	width: 2rem;
+	height: 0.7rem;
+	background: #f2f5f8;
+	border-radius: 0.05rem;
+	line-height: 0.7rem;
+	text-align: center;
+}
+
+.list .active {
+	background: #31a2ff;
+	color: #fff;
+}
+
+.zh {
+	text-align: center;
+	display: inline-block;
+	width: 0.35rem;
+	height: 0.35rem;
+	background: #f5c406;
+	color: #fff;
+	font-size: 0.24rem;
+	position: absolute;
+	bottom: 0.06rem;
+	right: 0;
+	border-radius: 50%;
+}
+
+.lookInfo {
+	padding: 0.3rem 0.24rem 0 0.24rem;
+	border-top: 0.2rem solid #f5f5f5;
+}
+
+.infoList li {
+	width: 3.38rem;
+	height: 1.48rem;
+}
+.infoList li:first-child{
+	background:url(/static/app/images/25.png) no-repeat;
+	background-size: 100% 100%;
+}
+.infoList li:nth-child(2){
+	background:url(/static/app/images/26.png) no-repeat;
+	background-size: 100% 100%;
+}
+.icon {
+	display: inline-block;
+	width: 0.48rem;
+	height: 0.48rem;
+	float: left;
+	margin: 0.32rem 0.26rem 0 0.26rem;
+}
+
+.infoa {
+	float: left;
+	margin-top: 0.32rem;
+}
+
+.infoa p {
+	color: #fff;
+	font-size: 0.26rem;
+	line-height: 0.45rem;
+}
+
+.infoa p:nth-child(2) {
+	font-size: 0.36rem;
+}
+
+.shopBox {
+	width: 100%;
+	height: auto;
+}
+
+.one {
+	width: 3.37rem;
+	height: 3.22rem;
+	background: red;
+	margin-top: 0.3rem;
+	float: left;
+}
+
+.person {
+	display: block;
+	width: 1.14rem;
+	height: 0.75rem;
+	margin: 0.34rem auto 0;
+}
+
+.one p {
+	color: #fff;
+	font-size: 0.26rem;
+	text-align: center;
+	line-height: 0.5rem;
+}
+
+.look {
+	display: block;
+	width: 1.62rem;
+	height: 0.52rem;
+	border: 1px solid #fff;
+	border-radius: 0.26rem;
+	color: #fff;
+	line-height: 0.52rem;
+	text-align: center;
+	margin: 0.2rem auto 0;
+}
+
+.infoL {
+	float: right;
+	width: 3.37rem;
+	margin-top: 0.3rem;
+}
+
+.infoL li {
+	width: 3.38rem;
+	height: 1.48rem;
+	background: #ccc;
+}
+
+.goodsNum {
+	width: 100%;
+	height: 1.47rem;
+	background: #f2f2f2;
+	float: left;
+	margin: 0.28rem 0 0.54rem 0;
+}
+
+.goodsNum img {
+	display: block;
+	width: 0.61rem;
+	height: 0.61rem;
+	margin: 0.3rem auto 0;
+}
+
+.goodsNum p {
+	color: #fff;
+	font-size: 0.36rem;
+	text-indent: 0.28rem;
+}
+.close button{
+	display: block;
+	width:7.02rem;
+	border:none;
+	background: #198fe0;
+	font-size: 0.36rem;
+	height:0.88rem;
+	line-height: 0.88rem;
+	text-align: center;
+	border-radius: 0.2rem;
+	color: #FFF;
+	margin-top:0.4rem;
+}
+.closeAccount{
+	display: none;
+	width:5.5rem;
+	height:3rem;
+	text-align: center;
+	padding-top:0.5rem;
+	position: relative;
+}
+.closeAccount h2{
+	font-size: 0.36rem;
+	margin-top:0.2rem;
+}
+.closeAccount p{
+	margin-top:0.3rem;
+}
+.closeAccount a{
+	position: absolute;
+	bottom:0;
+	display: inline-block;
+	width:100%;
+	display: flex;
+}
+.closeAccount a button{
+	flex:1;
+	border:none;
+	height:0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.3rem;
+	background: #FFFFFF;
+	border-radius: 0.2rem;
+}
+.yes{
+	border:none;
+	border-right:3px solid #ddd;
+}
+.no{
+	color:#31a2ff;
+}

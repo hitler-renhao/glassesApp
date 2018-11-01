@@ -1,0 +1,143 @@
+body {
+	background: #F5F5F5;
+}
+
+nav,
+footer,
+.btn {
+ padding: 0 0.3rem 0.3rem 0.3rem;
+ background: #fff;
+}
+.pic{
+	padding-left:0.25rem;
+	padding-top:0.25rem;
+}
+input,
+select {
+ width: 4.3rem;
+ height: 0.68rem;
+ border: 1px solid #b8b7b7;
+ color: #666;
+ font-size: 0.24rem;
+ line-height: 0.88rem;
+ outline: none;
+ background: none;
+ margin: 0 auto;
+ border-radius: 0.1rem;
+ margin-top: 0.1rem;
+}
+
+nav .goods li {
+ margin: 0.3rem 0;
+}
+
+nav div .btn-search {
+ width: 0.8rem;
+ height: 0.68rem;
+ border-radius: 0.1rem;
+ background-color: #fe7c00;
+ border: none;
+ color: #fff;
+}
+
+nav .goods .btn-search span {
+ font-size: 0.3rem;
+}
+
+nav span {
+ font-size: 0.35rem;
+}
+
+.fl {
+ float: left;
+}
+
+.fr {
+ float: right;
+}
+
+.header .choice {
+ width: 100%;
+ height: 100%;
+ font-size: 0.36rem;
+ color: #fff;
+ text-align: center;
+ line-height: 0.88rem;
+}
+
+.texture {
+ width: 100%;
+ margin-bottom: 0.2rem;
+ overflow: hidden;
+ border: 1px solid #e7e7e7;
+}
+
+.texture li {
+ width: 33%;
+ text-align: center;
+ line-height: 0.8rem;
+}
+
+.texture li.left {
+ border-right: 1px solid #e7e7e7;
+}
+
+.texture li p {
+ margin: 0 auto;
+ width: 1.5rem;
+ font-size: 0.3rem;
+ border: 1px solid #e7e7e7;
+ line-height: 0.5rem;
+ border-radius: 0.1rem;
+ color: #41A9F6;
+ margin-bottom: 0.3rem;
+}
+
+select {
+ font-size: 0.24rem;
+}
+
+footer {
+ margin-top: 0.3rem;
+}
+
+footer > p {
+ font-size: 0.3rem;
+ line-height: 0.6rem;
+}
+
+footer table {
+ width: 100%;
+ height: 2rem;
+ border: solid thin #e7e7e7;
+}
+
+footer table .static {
+ padding-left: 0.1rem;
+font-size: 0.3rem;
+}
+
+footer table .absolu {
+ font-size: 0.35rem;
+ }
+
+.btn button {
+  display: block;
+  margin-bottom: 0.2rem;
+  width: 6.9rem;
+  outline: none;
+  border: none;
+  background: #198fe0;
+  color: #fff;
+  font-size: 0.36rem;
+  height: 0.88rem;
+  text-align: center;
+  line-height: 0.88rem;
+  border-radius: 0.2rem;
+  color: #fff;
+ }
+
+ .remarks {
+   margin-top: 0.2rem;
+   border-radius: 0.1rem;
+ }

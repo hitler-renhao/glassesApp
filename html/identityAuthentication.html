@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>验光师审核</title>
+	<link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css" />
+	<link rel="stylesheet" href="/static/app/layui/css/layui.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/identityAuthentication.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="head">
+			<a href="javascript:;"><img class="back" src="/static/app/images/icon_back2.png"></a>
+			<p class="title">验光师审核</p>
+		</div>
+		<form id="con">
+			<div class="shot">
+				<h2>1.请使用本人身份证及证件,注意证件原件无覆膜、水渍、反光等。</h2>
+				<h2>2.需上传本人手持身份证件照。</h2>
+				<h2>3.提交的资料仅用于 实名认证，请放心上传。</h2>
+				<div class="layui-upload face" >
+				  	<img src="/static/app/images/phone03.png" class="layui-upload-img" id="faces">
+				</div> 
+				<div class="layui-upload face" >
+				  	<img src="/static/app/images/photo04.png" class="layui-upload-img" id='backs'>
+				</div>
+				<div class="layui-upload photos" >
+				  	<img src="/static/app/images/ygszj.png" class="layui-upload-img" id='photos'>
+				</div>
+				<!--<p class="check">查看拍摄规范</p>-->
+			</div>
+			<!--<div class="ipt">
+				<h2>请输入身份证件上的姓名和身份证号,及职位</h2>
+				<div class="name">
+					<span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span><input type="text" class="optistname"/>
+				</div>
+				<div class="num">
+					<span>身份证号：</span><input type="text" class="optistidcard"/>
+				</div>
+				<div class="job">
+					<span>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：</span><input type="text" class="optistidcardjob" />
+				</div>
+			</div>-->
+			<div class="btn" id="btn">提交审核</div>
+			<input type='hidden' class="formImg1"/>
+			<input type='hidden' class="formImg2"/>
+			<input type='hidden' class="formImg3"/>
+		</form>
+		<div id="modal">
+			<img src="/static/app/images/bg07.png">
+		</div>
+	</div>
+	<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+	<script src="/static/app/layui/layui.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/static/app/layui/lay/modules/layer.js" ></script>
+	<script src="/static/app/js/common/commonUrl.js"></script>
+	<script src="/static/app/js/alljs/identityAuthentication.js"></script>
+</body>
+</html>

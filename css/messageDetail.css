@@ -1,0 +1,142 @@
+#head {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0.88rem;
+	background: #1a91e3;
+	z-index: 99;
+}
+#head .back {
+	width: 0.2rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0.24rem;
+	margin-top: -0.15rem;
+}
+#head .title {
+	width: 100%;
+	height: 100%;
+	font-size: 0.32rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+}
+#head .release {
+	width: 0.44rem;
+	height: 0.44rem;
+	position: absolute;
+	top: 50%;
+	right: 0.24rem;
+	margin-top: -0.22rem;
+}
+.con {
+	position: absolute;
+	width: 100%;
+	top: 0.88rem;
+	bottom: 0;
+}
+.con ul {
+	width: 7.02rem;
+	padding: 0 0.24rem 0.2rem 0.24rem;
+	overflow-y: scroll;
+	background: #f2f2f2;
+}
+.con ul li {
+	width: 100%;
+	background: #fff;
+	margin-top: 0.2rem;
+	border-radius: 0.2rem;
+	position: relative;
+	overflow: hidden;
+}
+.con ul li .top {
+	width: 100%;
+	height: 1.08rem;
+	border-bottom: 1px solid #dedede;
+	position: relative;
+}
+.con ul li .top .headImg {
+	width: 0.65rem;
+	height: 0.65rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0.2rem;
+	margin-top: -0.325rem;
+}
+.con ul li .top h2 {
+	font-size: 0.28rem;
+	color: #333;
+	margin-left: 0.24rem;
+	line-height: 1.08rem;
+}
+.details h3 {
+	font-size: 0.2rem;
+	color: #666;
+	text-align: right;
+	margin-right:0.24rem;
+	padding:0.15rem 0;
+}
+.con ul li .top .checkAll {
+	width:0.2rem;
+	height:0.3rem;
+	position: absolute;
+	right:0.2rem;
+	top:0.4rem;
+	font-size: 0.22rem;
+	color: #999;
+}
+.con ul li .top .checkAll img{
+	width:100%;
+}
+.con ul li .word {
+	font-size: 0.26rem;
+	color: #333;
+	line-height: 0.5rem;
+	padding: 0.16rem 0.24rem 0;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/*消息详情*/
+.con h5{
+	height:1.08rem;
+	line-height: 1.08rem;
+	text-align: center;
+	font-size: 0.32rem;
+	color: #666;
+}
+.con h4{
+	text-align: right;
+	font-size: 0.26rem;
+	padding-right:0.24rem;
+	color: #999;
+}
+.content{
+	padding:0.2rem;
+	box-sizing: border-box;
+	font-size: 0.3rem;
+	color: #666;
+}
+.details h4{
+	position: absolute;
+    top: 0.2rem;
+    right: -0.5rem;
+    font-size: 0.22rem;
+    background: red;
+    color: #fff;
+    width: 1.2rem;
+    text-align: center;
+    -webkit-transform-origin-x: rotate;
+    -webkit-transform-origin-x: ro;
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.bg{
+    background: #ccc !important;
+}

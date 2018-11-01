@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/swiper-4.2.2.min.css">
+	<!--<link rel="stylesheet" href="/static/app/layui/css/modules/laydate/default/laydate.css" />-->
+	<link rel="stylesheet" type="text/css" href="/static/app/css/index.css">
+	<link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css">
+</head>
+<body style="display:none;">
+	<div id="container">
+		<a href="javaScript:;" class="mes">
+			<img class="ke" src="/static/app/images/kefu.png">
+		</a>
+		<div id="top">
+			<!-- 头部 -->
+			<div class="head">
+				<img class="headImg" src="/static/app/images/head.png">
+				<div class="city flex">
+					<p class="address"></p>
+					<!--<img class="arrow" src="/static/app/images/icon_xiala.png">-->
+				</div>
+				<img class="tips" src="/static/app/images/icon01.png">
+				<span class="infor"></span>
+			</div>
+			<!-- 个人中心 -->
+			<div class="personal">
+				<div class="per_con">
+					<div class="per_top">
+						<img class="per_head" src="/static/app/images/head.png">
+						<p class="state">审核</p>
+						<p class="name"></p>
+						<img class="close" src="/static/app/images/icon_xiala.png">
+						<p class="price">个人中心</p>
+					</div>
+					<div class="per_cen">
+						<ul class="centerbg">
+							<li data-orderStatus='0'>抢•单</li>
+							<li data-orderStatus='1' class="pitch">预•约•单</li>
+						</ul>
+					</div>
+					<ul class="list">
+						<a href="/static/app/html/myAccount.html">
+							<li>
+								<img class="ico1" src="/static/app/images/icon07.png">
+								<p>我的钱包</p>
+							</li>
+							<span><img src="/static/app/images/jiantou.png"></span>
+						</a>
+						<a href="/static/app/html/socialCircle.html">
+							<li>
+								<img class="ico6" src="/static/app/images/icon12.png">
+								<p>我的社圈</p>
+							</li>
+							<span><img src="/static/app/images/jiantou.png"></span>
+						</a>
+						<a href="/static/app/html/customerData.html">
+							<li>
+								<img class="ico6" src="/static/app/images/icon_shuju.png">
+								<p>用户数据</p>
+							</li>
+							<span><img src="/static/app/images/jiantou.png"></span>
+						</a>
+						<a href="/static/app/html/share.html">
+							<li>
+								<img class="ico4" src="/static/app/images/icon10.png">
+								<p>邀请分享</p>
+							</li>
+							<span><img src="/static/app/images/jiantou.png"></span>
+						</a>
+						<!--<a id="kefulink" href="JavaScript:;">
+							<li>
+								<img class="ico3" src="/static/app/images/icon09.png">
+								<p>在线客服</p>
+							</li>
+							<span><img src="/static/app/images/jiantou.png"></span>
+						</a>-->
+						<a href="/static/app/html/helpCenter.html">
+							<li>
+								<img class="ico5" src="/static/app/images/icon11.png">
+								<p>帮助中心</p>
+							</li>
+							<span><img src="/static/app/images/jiantou.png"></span>
+						</a>
+						<a href="javascript:;" class="systemSetup">
+							<li>
+								<img class="ico7" src="/static/app/images/icon_zhuxiao.png">
+								<p>系统设置</p>
+							</li>
+							<span><img src="/static/app/images/jiantou.png"></span>
+						</a>
+					</ul>
+				</div>
+				<div class="empty" style="width:1.5rem;height:100%;"></div>
+			</div>
+			<!-- banner -->
+			<div class="banner">
+				<img class="bannerBg" src="/static/app/images/bg02.png">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><a href="/static/app/html/bannerdetail.html"><img src="/static/app/images/32.jpg"></a></div>
+				        <div class="swiper-slide"><a href="/static/app/html/bannerdetail.html"><img src="/static/app/images/30.jpg"></a></div>
+				        <div class="swiper-slide"><a href="/static/app/html/bannerdetail.html"><img src="/static/app/images/31.jpg"></a></div>
+				    </div>
+				    <div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<!-- 社圈分享 -->
+			<div class="Headline">
+				<img class="HeadlineLogo" src="/static/app/images/jxgh.png">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				    </div>
+				</div>
+				<span class="more"><img src="/static/app/images/gd.png"/></span>
+			</div>
+		</div>
+		<!-- 分类 -->
+		<div id="nav" class="flex">
+		</div>
+		<!-- 我的收支 -->
+		<div id="myIncom">
+			<div class="options">
+				<div class="link">
+					<p class="active3 money" >我的收支</p>
+					<p class="order">我的订单</p>
+				</div>
+				<div class="date">
+					<input type="text"  class="startime" class="form-control layer-date" placeholder="开始日期"/> - 
+					<input type="text"  class="endtime" class="form-control layer-date" placeholder="结束日期"/>
+				</div>
+			</div>
+			<ul class="items">
+				<li class="active2" data-type="0">实际收入</li>
+				<li data-type="1">支出</li>
+				<li data-type="2">利润析线图</li>
+			</ul>
+			<!-- echarts折线图S -->
+			<div id="main" style="width:350px;height:200px;margin-left:6%;"></div>
+			<!-- echarts折线图E -->
+		</div>
+		<!-- 系统消息 -->
+		<div id="systemMsg">
+			<h2>系统消息</h2>
+			<ul>
+			</ul>
+			<p class="bottomText">—— 已经到最底部啦 ——</p>
+		</div>
+	</div>
+	<div id="allmap"></div>
+
+</body>
+<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=nlqmwS4x5dr1H1Q1wnHfiQ6BSOHZU3j6"></script>
+<!--<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>-->
+<script type="text/javascript" src="/static/app/js/common/jquery.date.js" ></script>
+<script type="text/javascript" src="/static/app/js/common/swiper-4.2.2.min.js"></script>
+<!--<script type="text/javascript" src="/static/app/layui/lay/modules/laydate.js" ></script>-->
+<script src="/static/app/layui/lay/modules/layer.js"></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script src="/static/app/js/alljs/index.js"></script>
+<script src="/static/app/js/common/echarts.min.js"></script>
+<script>
+	$.date('.startime');
+	$.date('.endtime');
+//HTML5与百度地图相关方法
+var map = new BMap.Map("allmap");
+var point = new BMap.Point(116.331398,39.897445);
+map.centerAndZoom(point,12);
+
+var geolocation = new BMap.Geolocation();
+// 开启SDK辅助定位
+geolocation.enableSDKLocation();
+geolocation.getCurrentPosition(function(r){
+	if(this.getStatus() == BMAP_STATUS_SUCCESS){
+		var mk = new BMap.Marker(r.point);
+		map.addOverlay(mk);
+		map.panTo(r.point);
+		//alert('您的位置：'+r.point.lng+','+r.point.lat);
+		var lon = r.point.lng;
+		var lat = r.point.lat;
+		var myGeo = new BMap.Geocoder();      
+			// 根据坐标得到地址描述    
+		myGeo.getLocation(new BMap.Point(lon, lat), function(r){      
+		    if (r){      
+		    //alert(r.address); 
+		    //for(var a in r.addressComponents){
+		   // 	alert(a);
+		    //}
+		    	geoProvince = r.addressComponents.province;
+				geoCity = r.addressComponents.city;
+				setCookie('geoProvince',geoProvince,30);
+				setCookie('geoCity',geoCity,30);
+				//geoAddress=r.address;
+				if(geoProvince==geoCity){
+					$('.address').text(geoProvince);
+				}else{
+					$('.address').text(geoProvince+geoCity);
+				}
+				
+				$('#allmap').css('display',"none");
+				//var infoWindow = new BMap.InfoWindow(sContent);
+				//map.openInfoWindow(infoWindow, point);
+				 var optistId=getCookie("loginUserId");    //用户ID
+				$.ajax({
+					type:"get",
+					url:global + "/v1.0/homePage/setgeolocation",
+					async:true,
+					dataType:"json",
+					data:{
+						optUserId:optistId,
+						lon:lon,
+						lat:lat
+					},
+					success:function(data){
+						console.log(data);
+					}
+				});
+		    }      
+		});
+		
+		
+	}
+	else {
+		alert('failed'+this.getStatus());
+	}        
+});
+
+</script>
+</html>

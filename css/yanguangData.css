@@ -1,0 +1,43 @@
+/* 验光数据 */
+*{padding:0;margin:0;}
+input{
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;z-index:9;}
+section{height:100%;margin-top:0.8rem;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+.container .header .choice{line-height:0.88rem;color:#fff;font-size:0.34rem;}
+
+/* 表格S */
+.tables .first_table {margin-top:0.3rem;margin-left:4%;width:92%;border:1px solid #dedede;}
+.tables .first_table tr th,.last table tr th {color:#666;padding:0.2rem;}
+.tables .first_table tr td,.last table tr td {padding:0.2rem;width:23%;}
+.tables .first_table tr td input,.tables .center table tr td input,.last table tr td input,.last p input {border:none;width:100%;display:block;}
+.tables .center {display:flex;}
+.center table:nth-child(1){margin-left:4%;}
+.center table:nth-child(2){margin-left:3.5%;}
+.tables .center table {margin-top:0.2rem;width:44%;border:1px solid #dedede;}
+.tables .center table tr th {color:#666;padding:0.2rem;width:22%;}
+.tables .center table tr td {padding:0.2rem;width:22%;}
+.last table {margin-top:0.2rem;margin-left:4%;width:92%;border:1px solid #dedede;}
+.last .trs td:nth-child(3) {padding:0.2rem;width:15%;}
+.last p {margin-top:0.2rem;margin-left:4%;width:86%;border:1px solid #dedede;padding:0.2rem;}
+/* 表格E */
+
+button.btn {width: 90%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #1a92e5;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    /* position: absolute; */
+    /* bottom: 1rem; */
+    /* left: 5%; */
+    font-size: 0.32rem;
+    margin-left: 5%;
+    margin-top: 1rem;}

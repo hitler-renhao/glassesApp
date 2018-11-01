@@ -1,0 +1,55 @@
+<!-- 已接单订单详情 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>已接单订单详情</title>
+	<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css" />
+	<link rel="stylesheet" type="text/css" href="/static/app/css/receivedorderDetails.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+	<!-- 遮罩层S -->
+    <div class="mask" style="display:none;">
+        <div class="dialog">
+            <h2>视力信息未填写完善</h2>
+            <p style="padding:0.2rem 0 0.5rem 0;text-align: center;">视力信息填写完善才能提交</p>
+            <p style="border-top:1px solid #f2f2f2;">
+                <span style="border-right:1px solid #f2f2f2;" class="no">否</span>
+                <span class="yes">是</span>
+            </p>
+        </div>
+    </div>
+    <!-- 遮罩层E -->
+	<div id="container">
+		<div id="head">
+			<a href="javascript:;"><img class="back" src="/static/app/images/icon_back2.png"></a>
+			<p class="title">订单详情</p>
+			<h2 class="optometry"><img src='/static/app/images/tianjia.png' /></h2>
+		</div>
+		<div id="con">
+			<ul>
+				<!--<li>姓名<input type="text" name="name" value="张艺兴" /></li>
+				<li>手机号<input type="tel" name="name" value="13342277560" /></li>
+				<li>上门时间<input type="text" name="name" value="2018-08-07  14:00" /></li>
+				<li>预约城市<input type="text" name="name" value="北京" /></li>
+				<li>上门地址<input type="text" name="name" value="北京市朝阳区望京西园博泰大厦" /></li>-->
+			</ul>
+		</div>
+		<div class="beizhu">
+			<p>备注：</p>
+			<textarea placeholder="一般中午1-3点家里都有人，请按时到达" class="remark" readonly=""></textarea>
+		</div>
+		<div class="btn">
+			<button class="action serve">开始服务</button>
+			<button class="action refer">提交</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/static/app/layui/lay/modules/layer.js" ></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script src="/static/app/js/alljs/receivedorderDetails.js"></script>
+</html>

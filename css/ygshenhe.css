@@ -1,0 +1,13 @@
+/* 验光师审核 */
+*{padding:0;margin:0;}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;}
+section{flex:1;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .identity{line-height:0.88rem;color:#fff;font-size:0.32rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+.photos{border-bottom:0.2rem solid #f2f2f2;}
+.mess p {padding:0.3rem;}
+.mess input {width:70%;height:0.58rem;line-height:0.58rem;border:none;border:1px solid #ccc;}
+button.btn {width:80%;height:0.76rem;line-height:0.76rem;background:#1a91e3;color:#fff;border:none;border-radius:0.2rem;position:absolute;bottom:2.5rem;left:10%;font-size:0.32rem;}

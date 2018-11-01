@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>邀请分享</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+		<link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css">
+		<link rel="stylesheet" href="/static/app/css/share.css" />
+		<script type="text/javascript" src="/static/app/js/common/common.js"></script>	
+	</head>
+
+	<body>
+		<div id="share">
+			<img src="/static/app/images/icon_back2.png" class="pic"/>
+			<img src="/static/app/images/share.png" class="sharebg" />
+			<p>我的邀请码：<span>152364</span></p>
+			<h5 ontouchstart="gtouchstart()" ontouchmove="gtouchmove()" ontouchend="gtouchend()"><!--复制邀请码--></h5>
+			<h2 class="successed">已邀请成功：<span>3</span>人</h2>
+			<h2 class="benefit">已得邀请好友利益：<span>100</span>元</h2>
+			<h3><!--立即邀请--></h3>
+			<h4><!--点击查看--></h4>
+			
+		</div>
+		
+		<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+		<script src="/static/app/layui/lay/modules/layer.js"></script>
+		<script src="/static/app/js/alljs/share.js"></script>
+		<script>
+			var timeOutEvent=0;//定时器   
+	//开始按   
+	function gtouchstart(){   
+	    timeOutEvent = setTimeout("longPress()",500);//这里设置定时器，定义长按500毫秒触发长按事件，时间可以自己改，个人感觉500毫秒非常合适   
+	    return false;   
+	};   
+	//手释放，如果在500毫秒内就释放，则取消长按事件，此时可以执行onclick应该执行的事件   
+	function gtouchend(){   
+	    clearTimeout(timeOutEvent);//清除定时器   
+	    //if(timeOutEvent!=0){   
+	        //这里写要执行的内容（尤如onclick事件）   
+	        //alert("你这是点击，不是长按");   
+	   // }   
+	    return false;   
+	};   
+	//如果手指有移动，则取消所有事件，此时说明用户只是要移动而不是长按   
+	function gtouchmove(){   
+	    clearTimeout(timeOutEvent);//清除定时器   
+	    timeOutEvent = 0;   
+	      
+	};   
+	   
+	//真正长按后应该执行的内容   
+	function longPress(){   
+	    timeOutEvent = 0;   
+	    //执行长按要执行的内容，如弹出菜单   
+	    var share = $('#share p').find('span').text();
+	    alert(share);
+	} 
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,128 @@
+/* 未绑定卡 */
+html {background:#f2f2f2;}
+#head { 
+	width: 100%;
+	height: 0.88rem;
+	position: relative;
+	background: #1d98ed;
+}
+#head .back {
+	width: 0.2rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0.24rem;
+	margin-top: -0.15rem;
+}
+#head .title {
+	width: 100%;
+	height: 100%;
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+}
+#head .addCard {
+	height: 100%;
+	font-size: 0.3rem;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0.24rem;
+	line-height: 0.88rem;
+}
+.unbound {
+    width:100%;
+    background:#fff;
+    margin-top:0.3rem;
+}
+.unbound p:first-child {
+    width:1.3rem;
+    height:1.3rem;
+    padding:0.5rem 0;
+    margin-left:40%;
+}
+.unbound p:first-child img {
+    width: 100%;
+    height: 100%;
+}
+.unbound p:nth-child(2) {
+    width: 100%;text-align:center;padding-bottom: 0.3rem;
+}
+.money {
+	width: 100%;
+	height: 2.68rem;
+	background: #fff;
+	margin-top:0.3rem;
+}
+.money h2 {
+	width: 7.1rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	padding-left: 0.4rem;
+	font-size: 0.28rem;
+	color: #c5c4c4;
+}
+.money .num {
+	width: 100%;
+	height: 1.65rem;
+	font-size: 0.9rem;
+	color: #333;
+	line-height: 1.65rem;
+	padding-left: 0.4rem;
+}
+.money .num input {
+	width:85%;
+	height: 100%;
+	border: 0;
+	font-size: 0.9rem;
+	color: #333;
+	padding-left: 0.1rem;
+}
+.money p {
+	width: 6.8rem;
+	height: 0.5rem;
+	margin: 0 auto;
+	font-size: 0.24rem;
+	color: #b0b0b0;
+	line-height: 0.5rem;
+}
+.btn {
+	width: 7.02rem;
+	height: 0.88rem;
+	background: #1d9aef;
+	border-radius: 0.2rem;
+	margin: 1.45rem auto 0;
+	font-size: 0.32rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+}
+.brank{
+	width:100%;
+	height:1.3rem;
+	background: #FFFFFF;
+	position: relative;
+	padding:0.15rem 0.35rem;
+	box-sizing: border-box;
+}
+.brank p{
+	font-size: 0.3rem;
+	color: #000;
+}
+.brank h2{
+	font-weight: 400;
+	margin-top:0.2rem;
+	font-size: 0.25rem;
+}
+.brank .jiantou{
+	width:0.2rem;
+	height: 0.2rem;
+	display: inline-block;
+	position: absolute;
+	right:0.5rem;
+	top:0.5rem;
+}
+.brank .jiantou img{
+	width:100%;
+}

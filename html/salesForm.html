@@ -1,0 +1,97 @@
+<!-- 添加地址 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+ 	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1">
+	<title>填写销售单</title>
+	<link rel="stylesheet" href="/static/app/css/common.css">
+	<link rel="stylesheet" href="/static/app/css/salesForm.css">
+	<link rel="stylesheet" href="/static/app/css/font-awesome.min.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <div class="container">
+     <header class="header">
+      <a href="javaScript:;" class="pic">
+       <img src="/static/app/images/icon_back2.png" alt="">
+      </a>
+      <p class="choice">填写销售单</p>
+     </header>
+
+     <nav>
+      <ul class="goods">
+        <li>
+          <span>商品货号: </span>
+          <input type="text">
+          <button class="btn-search">
+              <span class="fa fa-search" aria-hidden="true"></span>
+          </button>
+        </li>
+        <li>
+            <span>商品名称: </span>
+          <input type="text" readonly>
+        </li>
+      </ul>
+      <ul class="texture">
+        <li class="fl left">
+          <span>商品型号：</span>
+          <p>c1</p>
+        </li>
+        <li class="fl left">
+          <span>商品颜色：</span>
+          <p>红色</p>
+        </li>
+        <li class="fl">
+          <span>商品材质：</span>
+          <p>纯钛</p>
+        </li>
+      </ul>
+      <span>销售人员: </span>
+      <select name="" id="">
+        <option value ="volvo">Volvo</option>
+        <option value ="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+     </nav>
+
+     <footer>
+       <p>顾客信息:</p>
+       <table border="1">
+        <tr>
+          <td>
+            <span class="static">姓名：</span>
+            <span class="absolu">贾晓丹</span>
+          </td>
+          <td>
+              <span class="static">电话：</span>
+              <span class="absolu">1213456789</span>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="static">金额：</span>
+                <span class="absolu">¥300</span>
+            </td>
+            <td>
+                <span class="static">时间：</span>
+                <span class="absolu">2018-9-20</span>
+            </td>
+          </tr>
+        </table>
+     </footer>
+     <div class="btn">
+        <button>提交</button>
+     </div>
+     <!--body-->
+    <script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+    <script src="/static/app/js/common/commonUrl.js"></script>
+    <script src="/static/app/js/common/salesForm.js"></script>
+
+    <!-- 模板引擎 -->
+  </div>
+</body>
+</html>

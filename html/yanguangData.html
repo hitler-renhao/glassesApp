@@ -1,0 +1,103 @@
+<!-- 验光数据 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>验光数据</title>
+    <link rel="stylesheet" href="/static/app/css/common.css">
+    <link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css" />
+    <link rel="stylesheet" href="/static/app/css/yanguangData.css">
+    <script src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="pic">
+                <img src="/static/app/images/icon_back2.png" alt="">
+            </span>
+            <span class="choice">验光数据</span>
+            <span></span>
+        </header>
+        <section class="section">
+            <div class="tables">
+                <table border="1" class="first_table">
+                    <tr>
+                        <th></th>
+                        <th>球镜</th>
+                        <th>柱镜</th>
+                        <th>轴位</th>
+                    </tr>
+                    <tr>
+                        <td>右眼(R)</td>
+                        <td><input type="text"  class="rp1RightQiujing"></td>
+                        <td><input type="text"  class="rp1RightZhujing"></td>
+                        <td><input type="text"  class="rp1RightZhouwei"></td>
+                    </tr>
+                    <tr>
+                        <td>左眼(L)</td>
+                        <td><input type="text"  class="rp1LeftQiujing"></td>
+                        <td><input type="text"  class="rp1LeftZhujing"></td>
+                        <td><input type="text"  class="rp1LeftZhouwei"></td>
+                    </tr>
+                </table>
+                <div class="center">
+                    <table border="1">
+                        <tr>
+                            <th></th>
+                            <th>瞳距</th>
+                        </tr>
+                        <tr>
+                            <td>右眼(R)</td>
+                            <td><input type="text"  class="rp1RightTongju"></td>
+                        </tr>
+                        <tr>
+                            <td>左眼(L)</td>
+                            <td><input type="text"  class="rp1LeftTongju"></td>
+                        </tr>
+                    </table>
+                    <table border="1">
+                        <tr>
+                            <th></th>
+                            <th>瞳高</th>
+                        </tr>
+                        <tr>
+                            <td>右眼(R)</td>
+                            <td><input type="text" class="rp1RightTonggao"></td>
+                        </tr>
+                        <tr>
+                            <td>左眼(L)</td>
+                            <td><input type="text" class="rp1LeftTonggao"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="last">
+                    <table border="1">
+                        <tr>
+                            <th></th>
+                            <th colspan="3">矫正视力</th>
+                        </tr>
+                        <tr class="trs">
+                            <td>右眼(R)</td>
+                            <td><input type="text" class="rp1RightJiaozhengshili"></td>
+                            <td rowspan="2">双眼(E)</td>
+                            <td rowspan="2"><input type="text" class="rp1Jiaozhengshili"></td>
+                        </tr>
+                        <tr>
+                            <td>左眼(L)</td>
+                            <td><input type="text" class="rp1LeftJiaozhengshili"></td>
+                        </tr>
+                    </table>
+                    <p><input type="text" class="rp1LeftAdd" placeholder="ADD"></p>
+                </div>
+            </div>
+            <button class="btn">保存</button>
+        </section>
+    </div>
+</body>
+<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/static/app/layui/lay/modules/layer.js" ></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script src="/static/app/js/alljs/yanguangData.js"></script>
+</html>

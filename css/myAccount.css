@@ -1,0 +1,105 @@
+body {
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2;
+}
+#container {
+	background: #1b94e7;
+}
+#head { 
+	width: 100%;
+	height: 0.88rem;
+	position: relative;
+}
+#head .back {
+	width: 0.2rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0.24rem;
+	margin-top: -0.15rem;
+}
+#head .title {
+	width: 100%;
+	height: 100%;
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+}
+#head .cash {
+	font-size: 0.32rem;
+	color: #fff;
+	line-height: 0.88rem;
+	position: absolute;
+	top: 0;
+	right: 0.24rem;
+}
+#con {background: #1b94e7;}
+#con h2 {
+	width: 7.1rem;
+	height: 0.88rem;
+	font-size: 0.24rem;
+	color: #fff;
+	line-height: 0.88rem;
+	padding-left: 0.4rem;
+}
+#con .money {
+	width: 7.1rem;
+	height: 1.79rem;
+	padding: 0.24rem 0 0 0.4rem;
+	font-size: 1.2rem;
+	color: #fff;
+}
+.details .tab {
+	width: 100%;
+	height: 0.68rem;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.details .tab li {
+	width: 1.6rem;
+	height: 100%;
+	border-radius: 0.15rem 0.15rem 0 0;
+	font-size: 0.3rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.68rem;
+}
+.details .tab li.active {
+	background: #019bfc;
+}
+.details .sheet {
+	width: 100%;
+	height: 0.9rem;
+	background: #fff;
+}
+.details .sheet li {
+	width: 25%;
+	height: 100%;
+	float: left;
+	font-size: 0.3rem;
+	color: #333;
+	text-align: center;
+	line-height: 0.9rem;
+}
+.details .items {
+	position: absolute;
+	width: 100%;
+	top: 5.34rem;
+	bottom: 0;
+	background: #f2f2f2;
+}
+.details .list {
+	width: 100%;
+	background: #f2f2f2;
+}
+.details .list li {
+	width: 25%;
+	height: 0.6rem;
+	float: left;
+	font-size: 0.24rem;
+	color: #666;
+	text-align: center;
+	line-height: 0.6rem;
+}

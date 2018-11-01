@@ -1,0 +1,130 @@
+<!-- 完善个人信息 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>完善信息</title>
+    <link rel="stylesheet" href="/static/app/css/common.css">
+    <link rel="stylesheet" href="/static/app/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css">
+    <link rel="stylesheet" href="/static/app/css/LArea.min.css" />
+    <link rel="stylesheet" href="/static/app/css/perfectInformation.css">
+    <script src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <!-- 遮罩层E -->
+    <div class="container">
+        <div class="main">
+            <div class="mess_top">
+                <a href="javascript:;" class="pic">
+                    <img src="/static/app/images/icon_back2.png" alt="">
+                </a>
+                <form id="con" class="layui-form" action="" ENCTYPE="multipart/form-data" lay-filter="formTest">
+                	<div class="layui-upload touxiang" >
+					  	<img src="/static/app/images/sethead.png" class="layui-upload-img" id="touxiang">
+					  	<span class="name names">您的姓名</span>
+					</div>
+                    <input type='hidden' class="heads"/>
+                </form>
+            </div>
+            <div class="kong"></div>
+            <div class="top">
+                <ul>
+                     <li>
+                        <p class="todayMoney"></p>
+                        <p>今日收入</p>
+                    </li>
+                    <li>
+                        <p class="monthOrder"></p>
+                        <p>本月完成订单</p>
+                    </li>
+                </ul>
+            </div>
+            <ul class="uls">
+                <li>
+                    <span>姓名</span>
+                    <input type="text"  class="span Username">
+                </li>
+                <li>
+                    <span>电话</span>
+                    <input type="text"  class="span tel" readonly="true"/>
+                </li>
+                <li>
+                    <span>身份证号</span>
+                    <input type="text"  class="span optistidcard" >
+                </li>
+               <!-- <li>
+                    <span>职位</span>
+                    <input type="text"  class="span optistidcardjob" >
+                </li>-->
+                <li>
+                    <span>性别</span>
+                    <select class="spans">
+                    	<option value="请选择">请选择</option>
+                        <option value='女'>女</option>
+                        <option value='男'>男</option>
+                    </select>
+                </li>
+                <li class="address_li">
+                    <span>地址</span>
+                    <input type="text"  class="span address" placeholder="请选择预约地址" readonly="">
+                    <input id="value" type="hidden" />
+                </li>
+                <li>
+                	<span>详细地址</span>
+					<input type="text" placeholder="请输入您的详细地址" class="span address_detail" />
+				</li>
+            </ul>
+            <ul class="uls">
+                <li>
+                    <span>收费标准</span>
+                    <select id="charge">
+                    	<option value="请选择">请选择</option>
+                        <option value="100">100</option>
+                        <option value="150">150</option>
+                        <option value="200">200</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="uls">
+                <li class="shanchang">
+                    <span>擅长</span>
+                    <span class="question" id="begoodat"></span>
+                    <span class="jiantou"><img src="/static/app/images/jiantou.png"></span>
+                </li>
+                <li class="scbox" style="display: none;">
+                	<textarea placeholder="请输入您所擅长的内容"></textarea>
+                </li>
+                <li class="scbox" style="display: none;">
+                	<p>你还可以输入<span>500</span>个字</p>
+                	<button class="btnsc" id="btnsc">保存</button>
+                </li>
+                <li class="jianjie">
+                    <span>简介</span>
+                    <span class="question" id="jjs"></span>
+                    <span class="jiantou"><img src="/static/app/images/jiantou.png"></span>
+                </li>
+                <li class="jjbox" style="display: none;">
+                	<textarea placeholder="请输入您的简介"></textarea>
+                </li>
+                <li class="jjbox" style="display: none;">
+                	<p>你还可以输入<span>500</span>个字</p>
+                	<button class="btnjj" id="btnjj">保存</button>
+                </li>
+            </ul>
+        </div>
+        <div class="btn">
+            <button type="button">保存</button>
+        </div>
+    </div>
+</body>
+<script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script src="/static/app/layui/layui.js" charset="utf-8"></script>
+<script src="/static/app/layui/lay/modules/layer.js"></script>
+<script type="text/javascript" src="/static/app/js/common/LArea.min.js" ></script>
+<script type="text/javascript" src="/static/app/js/common/LAreaData2.js" ></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script src="/static/app/js/alljs/perfectInformation.js"></script>
+</html>

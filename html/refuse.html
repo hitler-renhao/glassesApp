@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>拒单原因</title>
+	<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/refuse.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+	<!-- 关注成功 -->
+    <div class="success" style="display:none;">
+		<p>标签保存成功</p>
+	</div>
+	<!-- 关注成功 -->
+	<div id="container">
+		<div id="head">
+			<a href="/static/app/html/yuyueorderDetails.html"><img class="back" src="/static/app/images/icon_back2.png"></a>
+			<p class="title">拒单原因</p>
+		</div>
+		<div id="con">
+			<textarea  placeholder="请填写拒单原因" class="objection-text"></textarea> 
+			<div class="label">
+				<p>快捷标签</p>
+				<div class="edit" style="display:none;">
+					<img src="/static/app/images/edit.png">
+					<p>编辑</p>
+				</div>
+				<div class="save">
+					<img src="/static/app/images/save.png">
+					<p>保存</p>
+				</div>
+			</div>
+			<p id="saved">标签保存成功</p>
+			<ul class="objection">
+				<li>距离客户家较远，无法按时到达<img src="/static/app/images/delete.png"></li>
+				<li>临时突发状况<img src="/static/app/images/delete.png"></li>
+				<li>其他原因<img src="/static/app/images/delete.png"></li>
+			</ul>
+		</div>
+		<button class="btn">确认拒单</button>
+		<div id="modal" style="display: none;">
+			<div class="box">
+				<h2>您确认要拒绝此订单吗？</h2>
+				<p>每日可拒绝次数：3次</p>
+				<ul>
+					<li class="no">否</li>
+					<li class="yes">是</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+	<script src="/static/app/js/common/commonUrl.js"></script>
+	<script type="text/javascript" src="/static/app/js/alljs/refuse.js"></script>
+</body>
+</html>

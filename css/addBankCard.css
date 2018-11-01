@@ -1,0 +1,159 @@
+#head { 
+	width: 100%;
+	height: 0.88rem;
+	position: relative;
+	background: #1d98ed;
+}
+#head .back {
+	width: 0.2rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0.24rem;
+	margin-top: -0.15rem;
+}
+#head .title {
+	width: 100%;
+	height: 100%;
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+}
+#con {
+	width: 100%;
+	position: absolute;
+	top: 0.88rem;
+	bottom: 0;
+	background: #f2f2f2;
+}
+#con .tips {
+	height: 0.88rem;
+	font-size: 0.3rem;
+	color: #999;
+	line-height: 0.88rem;
+	margin-left: 0.24rem;
+}
+#con .infor {
+	background: #fff;
+}
+.infor .name {
+	width: 7.26rem;
+	height: 0.8rem;
+	border-bottom: 1px solid #f2f2f2;
+	padding-left: 0.24rem;
+}
+.infor .name label {
+	float: left;
+	height: 100%;
+	line-height: 0.8rem;
+	font-size: 0.28rem;
+	color: #333;
+	margin-right: 0.1rem;
+}
+.infor .name input {
+	height: 100%;
+	border: 0;
+	float: left;
+	width: 5.9rem;
+	height: 100%;
+	font-size: 0.28rem;
+	color: #333;
+}
+.infor .cardNum {
+	width: 7.26rem;
+	height: 0.8rem;
+	border-bottom: 1px solid #f2f2f2;
+	padding-left: 0.24rem;
+}
+.infor .cardNum label {
+	float: left;
+	height: 100%;
+	line-height: 0.8rem;
+	font-size: 0.28rem;
+	color: #333;
+	margin-right: 0.1rem;
+}
+.infor .cardNum input {
+	height: 100%;
+	border: 0;
+	float: left;
+	width: 5.9rem;
+	height: 100%;
+	font-size: 0.28rem;
+	color: #333;
+}
+.infor .phoneNum {
+	width: 7.26rem;
+	height: 0.8rem;
+	border-bottom: 1px solid #f2f2f2;
+	padding-left: 0.24rem;
+	position: relative;
+}
+.infor .phoneNum label {
+	float: left;
+	height: 100%;
+	line-height: 0.8rem;
+	font-size: 0.28rem;
+	color: #333;
+	margin-right: 0.1rem;
+}
+.infor .phoneNum input {
+	height: 100%;
+	border: 0;
+	float: left;
+	width: 5.9rem;
+	height: 100%;
+	font-size: 0.28rem;
+	color: #333;
+}
+.infor .phoneNum span {
+	display: block;
+	width: 2.72rem;
+	height: 0.37rem;
+	border: 1px solid #37b2ff;
+	border-radius: 0.5rem;
+	font-size: 0.24rem;
+	color: #37b2ff;
+	text-align: center;
+	line-height: 0.37rem;
+	position: absolute;
+	top: 50%;
+	right: 0.4rem;
+	margin-top: -0.145rem;
+}
+.infor .code {
+	width: 7.26rem;
+	height: 0.8rem;
+	border-bottom: 1px solid #f2f2f2;
+	padding-left: 0.24rem;
+	position: relative;
+}
+.infor .code label {
+	float: left;
+	height: 100%;
+	line-height: 0.8rem;
+	font-size: 0.28rem;
+	color: #333;
+	margin-right: 0.1rem;
+}
+.infor .code input {
+	height: 100%;
+	border: 0;
+	float: left;
+	width: 5rem;
+	height: 100%;
+	font-size: 0.28rem;
+	color: #333;
+}
+#con button {
+	border:none;
+	display: block;
+	width: 7.06rem;
+	height: 0.88rem;
+	background: #1d9af0;
+	margin: 1.76rem auto 0;
+	border-radius: 0.3rem;
+	font-size: 0.36rem;
+	color: #fff;
+}

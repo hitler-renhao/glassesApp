@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择身份</title>
+    <link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+    <link rel="stylesheet" href="/static/app/css/choiceIdentity.css">
+    <script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="javascript:;" class="pic">
+                <img src="/static/app/images/icon_back2.png" alt="">
+            </a>
+            <span class="identity">选择身份</span>
+            <span></span>
+        </header>
+        <section>
+            <p style="padding-top:1rem;padding-left:0.3rem;font-size:0.26rem;color:#666;">请在下方选择正确的身份信息</p>
+            <p style="width:90%;height:3rem;margin-left: 5%;margin-top: 0.2rem;" class="choice" data-type='0'><img src="/static/app/images/ygsrz.png" alt="" style="width: 100%;height: 100%;"></p>
+            <p style="width:90%;height:3rem;margin-left: 5%;margin-top: 0.2rem;" class="choice" data-type='1'><img src="/static/app/images/sjsfrz.png" alt="" style="width: 100%;height: 100%;"></p>
+        </section>
+    </div>
+</body>
+<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script>
+	$('.pic').click(function(){
+		window.history.go(-1);
+	});
+    $('.choice').click(function(){
+    	var type =$(this).attr('data-type');
+        window.location.href='/static/app/html/register.html?type='+type+'';
+    })
+</script>
+</html>

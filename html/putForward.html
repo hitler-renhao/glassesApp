@@ -1,0 +1,83 @@
+<!-- 提现 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>提现</title>
+	<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/swiper-4.2.2.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/putForward.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="head">
+			<a href="/static/app/html/myAccount.html"><img class="back" src="/static/app/images/icon_back2.png"></a>
+			<p class="title">提现</p>
+			<p class="addCard" onClick="window.location.href='/static/app/html/myBankcard.html'">我的银行卡</p>
+		</div>
+		<div id="con">
+			<div class="bankCard">
+				<div class="bank">
+					<img class="cardImg" src="/static/app/images/text01.png">
+					<p class="bankName">中国建设银行</p>
+					<p class="bankNum">尾号9073储蓄卡</p>
+					<img class="arrow" src="/static/app/images/8.png">
+				</div>
+				<p class="noBank">您还未绑定银行卡，请先绑定银行卡</p>
+			</div>
+			<div class="money">
+				<h2>提现金额</h2>
+				<div class="num">
+					￥<input type="text" name="num" placeholder="0.00" id="money"/>
+				</div>
+				<p>可用余额5.00元</p>
+			</div>
+			<div class="btn">预计1小时到账，请注意查收</div>
+		</div>
+		<div id="modal">
+			<div class="bottom">
+				<ul>
+					<li class="active">中国银行6006</li>
+					<li>中国银行6006</li>
+				</ul>
+				<div class="add" onClick="window.location.href='/static/app/html/addBankCard.html'">添加银行卡</div>
+				<div class="cancel">取消</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#modal .bottom ul li').click(function() {
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+			$('#modal .bottom .cancel').click(function() {
+				$('#modal').hide();
+			});
+			$('.bankCard').click(function() {
+				$('#modal').show();
+			});
+			// 判断提现金额必须是数字
+			// $("#money").click(function(){
+			// 	var money = $("#money").val();
+			// 	console.log(money,'33666')
+			// 	if(isNaN(money)){
+			// 		alert("请输入数额！")
+			// 	}
+			// })
+			$(".btn").click(function(){
+				var money = $("#money").val();
+				console.log(money,'33666')
+				if(isNaN(money)){
+					alert("请输入数额！")
+					$("#money").val('')
+				}
+			})
+		})
+	</script>
+</body>
+</html>

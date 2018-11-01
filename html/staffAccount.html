@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>我的账户</title>
+	<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/swiper-4.2.2.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/myAccount.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="head">
+			<a href="javascript:;"><img class="back" src="/static/app/images/icon_back2.png"></a>
+			<p class="title">我的账户</p>
+		</div>
+		<div id="con">
+			<h2>账户余额（元）</h2>
+			<p class="money"></p>
+			<div class="details">
+				<ul class="tab flex">
+					<li class="active" id="day" data-type='1'>日</li>
+					<li id="week" data-type='2'>周</li>
+					<li id="mouth" data-type='3'>月</li>
+					<li id="year" data-type='4'>年</li>
+				</ul>
+				<ul class="sheet">
+					<li>类型</li>
+					<li>收入/支出</li>
+					<li>员工收入</li>
+					<li>创建日期</li>
+				</ul>
+				<div class="items">
+					<!-- <ul class="list">
+						<li>交易</li>
+						<li>-200</li>
+						<li>1800</li>
+						<li>2018.8.11</li>
+					</ul> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/static/app/js/common/commonUrl.js"></script>
+	<script src="/static/app/js/alljs/staffAccount.js"></script>
+</body>
+</html>

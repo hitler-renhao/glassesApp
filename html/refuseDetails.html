@@ -1,0 +1,40 @@
+<!-- 视力详情 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单视力详情</title>
+    <link rel="stylesheet" href="/static/app/css/common.css">
+    <link rel="stylesheet" href="/static/app/css/eyesDetails.css">
+    <script src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="pic">
+                <img src="/static/app/images/icon_back2.png" alt="">
+            </span>
+            <span class="choice">订单详情</span>
+            <span></span>
+        </header>
+        <div class="con">
+            <ul class="list">
+            </ul>
+            <div class="beizhu">
+				<p style="font-size:0.3rem;padding:0.18rem 0.24rem;">拒单原因：</p>
+				<textarea class='remark' placeholder="" readonly=""></textarea>
+			</div>
+        </div>
+    </div>
+</body>
+<script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script type="text/javascript" src="/static/app/js/alljs/refuseDetails.js" ></script>
+<script>
+    $(".pic").click(function(){
+        window.history.go(-1);
+    })
+</script>
+</html>

@@ -1,0 +1,114 @@
+/* 客户数据 */
+header{flex-shrink: 1;}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.88rem;
+    background: #1f9ef5;
+    justify-content: space-between;
+    z-index: 20;
+}
+.header .pic {
+    width:0.2rem;
+    height:0.3rem;
+    display:inline-block;
+    padding-left:0.2rem;
+    padding-top:0.25rem;
+}
+.header .pic img{
+    width: 100%;
+    height: 100%;
+}
+.header .add{
+	position: absolute;
+	top: 0.25rem;
+	right:0.35rem;
+}
+.header .add img{
+	width:0.38rem;
+	height:0.38rem;
+}
+.linkman{
+	width:90%;
+	font-size: 0.36rem;
+	line-height:0.88rem;
+	text-align: center;
+	display: inline-block;
+	color:#fff;
+}
+#letter{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.15rem;
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+    line-height: 2rem;
+    background: rgba(145,145,145,0.6);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin:-1rem 0px 0px -1rem;
+    z-index: 99;
+    display: none;
+}
+#letter img{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin:25px 0px 0px 25px;
+}
+.sort_box{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0.88rem;
+}
+.sort_list{
+  padding:10px 60px 2px 80px;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #dedede;
+}
+.sort_list .num_logo{
+  width: 0.8rem;
+  height: 0.8rem;
+  overflow: hidden;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.4rem;
+}
+.sort_list .num_logo img{
+  width: 100%;
+  height: 100%;
+}
+.sort_list .num_name{
+  color: #000;
+}
+.sort_letter{
+  background-color: #f2f2f2;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  padding-left: 0.3rem;
+  color:#787878;
+  font-size: 0.28rem;
+}
+.initials{
+    position: fixed;
+    top: 0.9rem;
+    right: 0px;
+    height: 100%;
+    width: 0.3rem;
+    padding-right: 0.2rem;
+    text-align: center;
+    font-size: 0.24rem;
+    z-index: 99;
+    background: #fff;
+    text-align: -webkit-right;
+}
+.initials li img{
+  width: 0.28rem;
+  padding-left: 0.09rem;
+}

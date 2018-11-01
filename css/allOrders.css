@@ -1,0 +1,70 @@
+* {
+  color: #6F6F6F;
+}
+.main {
+  width: 100%;
+  background: #fff;
+  padding: 0 0.3rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.pic{
+	padding-left:0.25rem;
+	padding-top:0.25rem;
+}
+ul {
+  background-color: #fff;
+  overflow: hidden;
+}
+.main .box {
+  position: relative;
+  padding-left: 0.3rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.main img {
+  position: absolute;
+  top: 0.4rem;
+  left: 0rem;
+  width: 0.8rem;
+}
+
+.main .infomation {
+  width: 80%;
+  display: inline-block;
+  margin-left: 0.8rem;
+  padding-top: 0.3rem;
+}
+
+.main .info {
+  width: 100%;
+}
+
+.main .info span {
+  font-size: 0.28rem;
+}
+
+.state {
+  float: right;
+  color: #454545;
+}
+
+.main .address {
+  line-height: 0.8rem;
+}
+
+.main .serve {
+	display: none;
+  color: #1A92E3;
+  line-height: 0.5rem;
+}
+.date{
+	padding-top: 0.2rem;
+}
+.date span {
+  font-size: 0.28rem;
+}
+
+/*.main li {
+  margin-bottom: 0.5rem;
+}*/

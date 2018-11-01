@@ -1,0 +1,45 @@
+/* 发布消息 */
+*{padding:0;margin:0;box-sizing: border-box;}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;z-index:9;}
+section{height:100vh;margin-top:0.8rem;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;padding-left:0.2rem;padding-right:0.2rem;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;margin-top:0.25rem;}
+.container .header .pic img{width: 100%;height: 100%;}
+.container .header .choice{line-height:0.88rem;color:#fff;font-size:0.34rem;width: 100%;text-align: center;}
+.container .header .load {line-height:0.88rem;color:#fff;font-size:0.3rem;}
+#comment .box textarea{width:90%;height:2.5rem;margin-left:5%;padding-left:0.1rem;margin-top:0.3rem;background:#f8f8f8;border:none;border:1px solid #dedede;}
+#comment .box {position: relative;}
+#comment .box p span{color:#999;}
+button.btn {width:90%;height:0.8rem;line-height:0.76rem;background:#1a91e3;color:#fff;border:none;border-radius:0.2rem;margin-left:5%;font-size:0.32rem;margin-top:10%;}
+
+/* 遮罩S */
+.mask {width: 100%;height: 100%;background:rgba(0, 0, 0, 0.5);position:fixed;top:0;left:0;z-index:99;}
+.mask .dialog {width:80%;background:#fff;border-radius: 0.2rem;position:absolute;top:50%;left:50%;margin:-28% 0 0 -40%;}
+.mask .dialog p {padding-top:0.3rem;text-align:center;font-size: 0.32rem;color:#666;}
+/* 遮罩E */
+.choiceImgs{
+	width:100%;
+	
+}
+.choiceImgs li{
+	width: 1.8rem;
+	height: 1.8rem;
+	margin-left:0.4rem;
+	margin-top:0.3rem;
+	display: inline-block;
+}
+.choiceImgs li img{
+	width:100%;
+	height:100%;
+}
+.title{
+	width: 90%;
+    height: 0.6rem;
+    margin-left: 5%;
+    padding-left: 0.1rem;
+    margin-top: 0.3rem;
+    background: #f8f8f8;
+    border: none;
+    border: 1px solid #dedede;
+}

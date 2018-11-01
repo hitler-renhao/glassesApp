@@ -1,0 +1,67 @@
+<!-- 订单详情2 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>订单详情2</title>
+	<link rel="stylesheet" type="text/css" href="/static/app/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/css/ordersDetails.css">
+	<script type="text/javascript" src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+	<div class="mask" style="display:none;"> 
+		<div class="dialog">
+			<h3>视力信息表未填写完善</h3>
+			<p>视力信息填写完整才可提交</p>
+			<p class="message">继续填写</p>
+		</div>
+	</div>
+	<div id="container">
+		<div id="head">
+			<a href="javascript:;">
+                <img class="back" src="/static/app/images/icon_back2.png">
+            </a>
+            <p class="title">订单详情</p>
+            <a href="/static/app/html/yanguangData.html">
+                <img src="/static/app/images/tianjia.png" alt="" class="add">
+            </a>
+		</div>
+		<div id="con">
+			<ul>
+				<li>姓名<input type="text" name="name" value="张艺兴" /></li>
+				<li>手机号<input type="tel" name="name" value="13342277560" /></li>
+				<li>上门时间<input type="text" name="name" value="2018-08-07  14:00" /></li>
+				<li>预约城市<input type="text" name="name" value="北京" /></li>
+				<li>上门地址<input type="text" name="name" value="北京市朝阳区望京西园博泰大厦" /></li>
+			</ul>
+		</div>
+		<div class="beizhu">
+			<p>备注：</p>
+			<textarea placeholder="一般中午1-3点家里都有人，请按时到达"></textarea>
+		</div>
+		<div class="btn">
+			<button class="action">提交</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script>
+	$(function() {
+		$('.back').click(function(){
+			window.history.go(-1);
+		})
+		$(".refuse").on('click', function() {
+			window.location.href = '/static/app/html/refuse.html'
+		})
+		$(".action").click(function(){
+			$(".mask").show()
+		})
+		$(".message").click(function(){
+			window.location.href = "/static/app/html/yanguangData.html"
+		})
+	})
+</script>
+</html>

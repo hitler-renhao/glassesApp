@@ -1,0 +1,63 @@
+body{
+	width:100%;
+	height:100%;
+}
+.shareDetail .shareBg{
+	width:100%;
+}
+.pic{
+	position: absolute;
+	width:0.2rem;
+	height: 0.3rem;
+	top:0.25rem;
+	left:0.25rem;
+}
+.shareDetail input{
+	height: 0.7rem;
+    line-height: 0.7rem;
+    border: none;
+    position: absolute;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+.phone,.pass{
+	width: 80%;
+    left: 10%;
+}
+.phone{
+	top:7.15rem;
+}
+.pass{
+	top:8.1rem;
+}
+.code{
+    width: 45%;
+    top: 9.08rem;
+    left: 10%;
+}
+.getcode{
+	position: absolute;
+	width: 30%;
+    top: 9.08rem;
+    right: 10%;
+    display: inline-block;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    color:#fff;
+    background: none;
+    border:none;
+}
+.invitation{
+	width: 80%;
+    top: 10.56rem;
+    left: 10%;
+}
+.register{
+	position: absolute;
+	width: 80%;
+    top: 11.75rem;
+    right: 10%;
+    display: inline-block;
+    height: 0.7rem;
+}

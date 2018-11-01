@@ -1,0 +1,254 @@
+<!-- 添加地址 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>填写销售单</title>
+  <link rel="stylesheet" href="/static/app/css/common.css">
+  <link rel="stylesheet" href="/static/app/layui/css/modules/layer/default/layer.css">
+  <link rel="stylesheet" href="/static/app/css/salesForm1.css">
+  <link rel="stylesheet" href="/static/app/css/font-awesome.min.css">  
+ 
+</head>
+<body>
+    <div class="container">
+     <header class="header">
+      <a href="javascript:;" class="pic">
+       <img src="/static/app/images/icon_back2.png" alt="">
+      </a>
+      <p class="choice">填写销售单</p>
+     </header>
+
+     <nav>
+      <div>
+        <span>商品货号: </span>
+        <input type="text" id="search">
+        <button class="btn-search">
+           <!-- <span class="fa fa-search" aria-hidden="true"></span>-->
+           <img src="/static/app/images/serch.png" style="width: 0.3rem"/>
+        </button>
+      </div>
+
+      <!-- 带渲染数据区域 -->
+      <div id="salesList">
+         
+      </div>
+      <span>销售人员: </span>
+      <select name="" id="personList">
+          
+          
+      </select>
+     </nav>
+
+     <footer>
+        <p>顾客信息:</p>
+        姓名: <input type="text" placeholder="请输入姓名" class="username"><br>
+        手机: <input type="text" placeholder="请输入手机号" class="telephone"><br>
+        金额: <input type="text" placeholder="总金额" class="fee"><br>
+        数量: <input type="text" value="1" placeholder="数量" class="num"><br>
+        备注: <textarea name="" id="" cols="30" rows="3" placeholder="备注" class="remarks"></textarea>
+     </footer>
+     <div class="btn">
+        <button>提交</button>
+     </div>
+  </div>
+       <!--body-->
+      <script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+      <script src="/static/app/layui/lay/modules/layer.js"></script>
+      <script src="/static/app/js/common/common.js"></script> 
+      <script src="/static/app/js/common/template.js"></script>
+      <script src="/static/app/js/common/commonUrl.js"></script>
+
+  <!-- 商品信息模板 -->
+  <script type="text/html" id="salesTpl">
+    <ul class="goods">
+        <li>
+            <span>商品名称: </span>
+          <input  name="<%:=data.data[0].id%>" type="text" readonly value="<%:=data.data[0].brandname%>">
+        </li>
+      </ul>
+      <ul class="texture">
+        <li class="fl left">
+          <span>商品型号：</span>
+          <% var modelName = ''; %>
+          <% if (data.data[0].modelname == 0) { %>
+          	<% modelName = 'c1'; %>
+          <% } else if (data.data[0].modelname == 1) { %>
+          	<%  modelName = 'c2'; %>
+          <% } else if(data.data[0].modelname == 2) { %>
+          	<%  modelName = 'c3'; %>
+          <% } %>
+          <p><%:= modelName %></p>
+        </li>
+        <li class="fl left">
+          <span>商品颜色：</span>
+          <% var colorName = ''; %>
+          <% if (data.data[0].colorname == 0) { %>
+          	<% colorName = '红色'; %>
+          <% } else if (data.data[0].colorname == 1) { %>
+          	<%  colorName = '黄色'; %>
+          <% } else if(data.data[0].colorname == 2) { %>
+          	<%  colorName = '绿色'; %>
+          <% } %>
+          <p><%:=colorName %></p>
+        </li>
+        <li class="fl">
+          <span>商品材质：</span>
+          <% var materialname = ''; %>
+          <% if (data.data[0].materialname == 0) { %>
+          	<% materialname = '纯钛'; %>
+          <% } else if (data.data[0].materialname == 1) { %>
+          	<%  materialname = '塑料'; %>
+          <% } else if(data.data[0].materialname == 2) { %>
+          	<%  materialname = '合金'; %>
+          <% } else if(data.data[0].materialname == 3) { %>
+          	<%  materialname = '金属'; %>
+          <% } %>
+          <p><%:=materialname%></p>
+        </li>
+      </ul>
+  </script>
+  
+  <!-- 员工模板 -->
+  <script type="text/html" id="personTpl">
+  	<% console.log(data.data[0].id) %>
+  	<option value ="volvo" disabled="disabled">待选择</option>
+    <% for(var i = 0; i < data.data.length; i++) { %>
+    <option value ="volvo" name="<%:=data.data[i].id%>"><%:=data.data[i].staffname%></option>
+    <% } %>
+  </script>
+
+  <script>
+  	
+  	$('.pic').click(function() {
+  		window.history.go(-1);
+  	})
+	
+	var shopIds = getUrlParam('id');
+	
+
+    // 商品信息
+    var salesTpl = document.getElementById('salesTpl').innerHTML;
+    var salesList = $('#salesList');
+    const salesForm = global + '/v1.0/CrmShopProductController/searchShopProduct';
+
+	$('.btn-search').click(function() {
+      value = $('#search').val();  
+      searchGoods(salesTpl, salesForm, salesList, shopIds, value);
+      searchGoods(personTpl, personForm, personList, shopIds);
+    })
+
+    // 商品信息发送请求
+    function searchGoods(Tpl, url, list, shopid, productno) {
+      $.ajax({
+      url: url,
+      type: 'post',
+      dateType: 'json',
+      data: {
+        shopid: shopid,
+        productno: productno
+      },
+      success: function(msg) { 
+        if(msg.code == 200) {
+        var html = template(Tpl, msg);
+        list.html(html);
+        }
+      }
+      })
+    };
+
+    // 员工信息
+    var personTpl = document.getElementById('personTpl').innerHTML;
+    var personList = $('#personList');
+    const personForm = global + '/v1.0/CrmShopProductController/searchShopStaff';
+
+    // 员工信息发送请求
+    function searchGoods(Tpl, url, list, shopid) {
+      $.ajax({
+      url: url,
+      type: 'post',
+      dateType: 'json',
+      data: {
+        shopid: shopid
+      },
+      success: function(msg) {     
+        if(msg.code == 200) {
+        var html = template(Tpl, msg);
+        list.html(html);
+        }
+      }
+      })
+    };
+
+
+    const sendDateUrl = global + '/v1.0/CrmShopProductController/offlineSales';
+    $('.btn button').click(function() {
+      // 店铺id 6
+
+      // 店员名字Id
+      var staffname = $('#personList option:selected').attr('name') - 0;
+      
+      // 商品名称Id productId
+      var productId = $('.goods li input').attr('name') - 0;     
+
+      // 数量
+      var num = $('.num').val() - 0;
+
+      // 金额
+      var fee = $('.fee').val() - 0;
+
+      // 姓名
+      var userName = $('.username').val();
+
+      // 电话
+      var userPhone = $('.telephone').val();
+
+      // 备注
+      var remarks = $('.remarks').val();
+      var pattern = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+      	if (!userName) {
+            layer.msg("请输入姓名");
+            return false;
+        }
+        if (!userPhone) {
+            layer.msg("请输入手机号");
+            return false;
+        }else if (!pattern.test(userPhone)) {
+            layer.msg("请输入正确的手机号");
+            return false;
+        };
+
+      sendDate(shopIds, staffname, productId, num, fee, userName, userPhone, sendDateUrl, remarks);
+    });
+
+    function sendDate(shopid, staffname, productId, num, fee, userName, userPhone, url, remarks) {
+      $.ajax({
+      url: url,
+      type: 'post',
+      dateType: 'json',
+      data: {
+        shopId: shopid,
+        ShopStaffId: staffname,
+        shoProductId: productId,
+        num: num,
+        fee: fee,
+        userName: userName,
+        userPhone: userPhone,
+        remarks: remarks
+      },
+      success: function(msg) {
+        layer.alert('提交成功',function(){
+        	window.location.href="/static/app/html/productList_r.html";
+        })
+      }
+      })
+    };
+  </script>
+</body>
+</html>

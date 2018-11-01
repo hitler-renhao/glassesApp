@@ -1,0 +1,15 @@
+/* 银行卡解除绑定 */
+* {padding:0;margin:0;}
+html {background:#f2f2f2;}
+.container {display:flex;flex-direction: column;}
+header{flex-shrink: 1;position:fixed;top:0;left:0;}
+.container .header {width:100%;height:0.88rem;background:#1f9ef5;display:flex;justify-content: space-between;}
+.container .header .pic {width:0.2rem;height:0.3rem;display:inline-block;padding-top:0.25rem;padding-left:0.2rem;}
+.container .header .order{padding-left: 0.2rem;line-height:0.88rem;color:#fff;font-size:0.32rem;}
+.container .header .pic img {width: 100%;height: 100%;}
+section{flex:1;margin-top:0.8rem;}
+.card p {width:94%;margin-left:3%;}
+.card p img {width: 100%;height: 100%;}
+section ul li {border-top:1px solid #dedede;border-bottom:1px solid #dedede;display:flex;justify-content: space-between;padding:0.2rem 0.3rem;}
+section ul li span {font-size:0.3rem;}
+section ul li span:last-child {font-size:0.26rem;color:#ff0101;}

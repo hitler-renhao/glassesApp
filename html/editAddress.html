@@ -1,0 +1,64 @@
+<!-- 编辑地址 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编辑地址</title>
+    <link rel="stylesheet" href="/static/app/css/common.css">
+    <link rel="stylesheet" href="/static/app/css/editAddress.css">
+    <script src="/static/app/js/common/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="javaScript:;" class="pic">
+                <img src="/static/app/images/icon_back2.png" alt="">
+            </a>
+            <span class="choice">编辑地址</span>
+            <span></span>
+        </header>
+        <section>
+            <div class="add_address">
+                <ul>
+                    <li style="position:relative;">
+                        <span>所在区域</span>
+                        <input type="text" value="山西省运城市万荣县" class="city">
+                        <span class="jiantou"><img src="/static/app/images/jiantou.png"></span>
+                    </li>
+                    <li>
+                        <span>详细地址</span>
+                        <input type="text" value="南张乡南张村" class="town">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span>设为默认地址</span>
+                        <span id="default"><img src="/static/app/images/default.png" alt="" id="pics"></span>
+                    </li>
+                    <!-- flag -->
+                </ul>
+            </div>
+            <button class="btn">保存</button>
+        </section>
+    </div>
+</body>
+<script src="/static/app/js/common/jquery-3.3.1.min.js"></script>
+<script src="/static/app/js/common/commonUrl.js"></script>
+<script src="/static/app/js/alljs/editAddress.js"></script>
+<script>
+    function change_pic(){
+        var defaul = document.getElementById('default');
+        var pics = document.getElementById("pics");
+        defaul.onclick = function(){
+            if(pics.getAttribute("src",2) == "/static/app/images/default.png"){
+                pics.setAttribute("src","/static/app/images/flag.png");
+            }else{
+                pics.setAttribute("src","/static/app/images/default.png");
+            };
+        }
+    }
+    change_pic();
+</script>
+</html>

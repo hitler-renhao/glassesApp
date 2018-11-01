@@ -1,0 +1,197 @@
+#head {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0.88rem;
+	background: #1a91e3;
+}
+#head .back {
+	width: 0.2rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 50%;
+	left: 0.24rem;
+	margin-top: -0.15rem;
+}
+#head .title {
+	width: 100%;
+	height: 100%;
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+}
+#con {
+	margin-top: 0.88rem;
+	overflow: hidden;
+}
+#con textarea {
+	width: 6.6rem;
+	height: 2.1rem;
+	display: block;
+	margin: 0.2rem auto 0;
+	padding: 0.2rem;
+	font-size: 0.2rem;
+	color: #333;
+	background:#f2f2f2;
+	border:none;
+	border: 1px solid #dedede;
+}
+#con .label {
+	width: 7.5rem;
+	height: 0.88rem;
+}
+#con .label p {
+	float: left;
+	font-size: 0.24rem;
+	color: #999;
+	line-height: 0.88rem;
+	margin-left: 0.24rem;
+}
+#con .label .edit {
+	float: right;
+	margin-right: 0.24rem;
+}
+#con .label .edit img {
+	float: left;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin-top: 0.3rem;
+}
+#con .label .edit p {
+	margin-left: 0.1rem;
+}
+#con .label .save {
+	float: right;
+	margin-right: 0.24rem;
+}
+#con .label .save img {
+	float: left;
+	width: 0.25rem;
+	height: 0.25rem;
+	margin-top: 0.3rem;
+}
+#con .label .save p {
+	margin-left: 0.1rem;
+}
+#con ul {
+	width: 7.26rem;
+	padding-left: 0.24rem;
+}
+#con ul li {
+	float: left;
+	width: auto;
+	height: 0.5rem;
+	border: 1px solid #dedede;
+	line-height: 0.5rem;
+	padding: 0.08rem 0.14rem;
+	font-size: 0.26rem;
+	color: #666;
+	margin: 0 0.24rem 0.2rem 0;
+	position: relative;
+}
+#con ul li img {
+	width: 0.26rem;
+	height: 0.26rem;
+	position: absolute;
+	top: -0.13rem;
+	right: -0.13rem;
+}
+button {
+	width: 7rem;
+	height: 0.88rem;
+	position: fixed;
+	bottom: 1.9rem;
+	left: 50%;
+	margin-left: -3.5rem;
+	border-radius: 0.2rem;
+	background: #1e9bf1;
+	font-size: 0.36rem;
+	color: #fff;
+	border: none;
+}
+#saved {
+	width: 2.5rem;
+	height: 0.8rem;
+	background: rgba(0,0,0,.5);
+	font-size: 0.3rem;
+	color: #fff;
+	border-radius: 0.1rem;
+	text-align: center;
+	line-height: 0.8rem;
+	position: fixed;
+	left: 50%;
+	top: 4.67rem;
+	margin-left: -1.25rem;
+	display: none;
+}
+#modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+}
+#modal .box {
+	width: 6rem;
+	height: 3.17rem;
+	margin: 4.56rem auto 0;
+	background: #fff;
+	border-radius: 0.2rem;
+	overflow: hidden;
+	position: relative;
+}
+#modal .box h2 {
+	width: 100%;
+	text-align: center;
+	margin-top: 0.6rem;
+	font-size: 0.36rem;
+	line-height: 0.36rem;
+	color: #333;
+}
+#modal .box p {
+	width: 100%;
+	text-align: center;
+	margin-top: 0.55rem;
+	font-size: 0.24rem;
+	line-height: 0.24rem;
+	color: #333;
+}
+#modal .box ul {
+	width: 100%;
+	height: 0.9rem;
+	border-top: 1px solid #dedede;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#modal .box ul li {
+	width: 49%;
+	height: 100%;
+	text-align: center;
+	line-height: 0.9rem;
+	font-size: 0.36rem;
+	color: #333;
+	float: left;
+}
+#modal .box ul li:last-child {
+	color: #1a91e3;
+	border-left: 1px solid #dedede;
+}
+.success p {
+	width:2.4rem;
+	height:0.78rem;
+	line-height:0.78rem;
+	text-align:center;
+	background:rgba(0, 0, 0, 0.45);
+	border-radius:0.1rem;
+	color:#fff;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-1.2rem;
+	margin-top:-0.39rem;
+	font-size:0.3rem;
+}
